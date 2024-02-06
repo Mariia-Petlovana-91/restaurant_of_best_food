@@ -1,7 +1,10 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+// BASE
+@import'./base/common';
+// COMPONENTS
+
+// LOYOUT
 
 //UTILS
-// @import './utils/visually-hidden';
+@import './utils/mixin';
+@import './utils/variables';
+@import './utils/visually-hidden';

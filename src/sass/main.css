@@ -1,5 +1,80 @@
-@charset "UTF-8";
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- *//*# sourceMappingURL=main.css.map */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --accent: #d41443;
+  --heroBgc: #ffb8ca;
+  --primaryBgc: #fff5f6;
+  --secondaryBgc: #ffffff;
+  --bgcMobMenu: #e17992;
+  --alternateBgc: #f0d1a5;
+  --additionalBgc: #c2e297;
+  --reviewBgc: #fafafa;
+  --circleBgc: #ffa5ba;
+  --accentSlider: #d31342;
+  --sliderBgc: #d9d9d9;
+  --primaryColor: #907e82;
+  --secondaryColor: #ffffff;
+  --darkColor: #000000;
+  --iconColor: #fea5bb;
+  --titleColor: var(--accent);
+  --preTitleColor: #ffa5ba;
+  --heroBtnLight: var(--secondaryBgc);
+  --heroBtnDark: var(--accent);
+  --heroBtnLightHover: #ecebeb;
+  --heroBtnDarkHover: #c7133e;
+}
+
+.is-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}/*# sourceMappingURL=main.css.map */
