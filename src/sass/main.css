@@ -41,6 +41,10 @@ img {
   height: auto;
 }
 
+.container {
+  padding: 5px;
+}
+
 :root {
   --accent: #d41443;
   --heroBgc: #ffb8ca;
