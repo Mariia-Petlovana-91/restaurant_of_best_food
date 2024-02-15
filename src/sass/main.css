@@ -1,3 +1,4 @@
+@charset "UTF-8";
 p,
 h1,
 h2,
@@ -47,6 +48,40 @@ img {
 
 .menu__item--desk {
   display: none;
+}
+
+.reviews__list {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 300px;
+  -webkit-overflov-scrolling: thouch;
+}
+
+.reviews__item {
+  flex: none;
+  scroll-snap-align: start;
+  width: 300px;
+  text-align: center;
+}
+
+/* Стилізація повзунка прокрутки */
+.reviews__list::-webkit-scrollbar {
+  width: 10px; /* Ширина повзунка */
+}
+
+.reviews__list::-webkit-scrollbar-thumb {
+  background-color: #888; /* Колір повзунка */
+  border-radius: 5px; /* Закруглення країв повзунка */
+}
+
+.reviews__list::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Колір фону повзунка */
+}
+
+/* Затемнення повзунка при наведенні миші */
+.reviews__list::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 
 :root {

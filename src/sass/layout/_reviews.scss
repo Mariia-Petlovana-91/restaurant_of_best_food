@@ -1,0 +1,67 @@
+.reviews__list{
+display: flex;
+overflow-x: scroll;
+scroll-snap-type: x mandatory;
+width: 300px;
+-webkit-overflov-scrolling: thouch;
+}
+
+.reviews__item{
+flex: none;
+scroll-snap-align: start;
+width: 300px;
+text-align: center;
+}
+
+
+/* Стилізація повзунка прокрутки */
+.reviews__list::-webkit-scrollbar {
+	width: 10px; /* Ширина повзунка */
+  }
+  
+  .reviews__list::-webkit-scrollbar-thumb {
+	background-color: #888; /* Колір повзунка */
+	border-radius: 5px; /* Закруглення країв повзунка */
+  }
+  
+  .reviews__list::-webkit-scrollbar-track {
+	background-color: #f0f0f0; /* Колір фону повзунка */
+  }
+  
+  /* Затемнення повзунка при наведенні миші */
+  .reviews__list::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+  }
+
+
+//Щоб додати власний повзунок прокрутки замість стандартного, вам слід використовувати властивість `scrollbar` в CSS. Однак важливо зауважити, що стилізація повзунка прокрутки не повністю підтримується в усіх браузерах, і це може варіюватися залежно від платформи та браузера.
+
+Ось приклад, як ви можете додати власний повзунок прокрутки для вашого контейнера слайдера:
+
+```css
+/* Стилізація повзунка прокрутки */
+.reviews__list::-webkit-scrollbar {
+    width: 10px; /* Ширина повзунка */
+}
+
+.reviews__list::-webkit-scrollbar-thumb {
+    background-color: #888; /* Колір повзунка */
+    border-radius: 5px; /* Закруглення країв повзунка */
+}
+
+.reviews__list::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Колір фону повзунка */
+}
+
+/* Затемнення повзунка при наведенні миші */
+.reviews__list::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+// У цьому прикладі:
+
+// - `::-webkit-scrollbar` визначає основні властивості повзунка.
+// - `::-webkit-scrollbar-thumb` стилізує сам повзунок.
+// - `::-webkit-scrollbar-track` стилізує фоновий трек, в якому рухається повзунок.
+
+// Зверніть увагу, що це стосується виключно веб-кіт браузерів (таких як Google Chrome, Safari), і інші браузери можуть мати свої власні підходи до стилізації повзунків прокрутки. 
