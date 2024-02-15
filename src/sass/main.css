@@ -45,6 +45,10 @@ img {
   padding: 5px;
 }
 
+.menu__item--desk {
+  display: none;
+}
+
 :root {
   --accent: #d41443;
   --heroBgc: #ffb8ca;

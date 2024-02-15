@@ -375,7 +375,7 @@
 							<button class="menu__btn" type="button">ORDER</button>
 						</a>
 					</li>
-				<!-- <li class="menu__item">
+				<li class="menu__item menu__item--desk">
 						<a class="menu__link" href="">
 							<picture width="100px" heigth="100px">
  
@@ -399,7 +399,7 @@
 							<button class="menu__btn" type="button">ORDER</button>
 						</a>
 					</li>
-				      <li class="menu__item">
+				      <li class="menu__item menu__item--desk">
 						<a class="menu__link" href="">
 							<picture width="100px" heigth="100px">
 
@@ -422,7 +422,7 @@
 							<p class="menu__decript">The thickest layer of meat</p>
 							<button class="menu__btn" type="button">ORDER</button>
 						</a>
-					</li> -->
+					</li>
 				</ul>
 			</div>
 		</section>
@@ -737,7 +737,7 @@
 							<use href="./src/images/sprite.svg#icon-comment"></use>
 						</svg>
 					</label>
-					<textarea class="comment__text" name="user-comment" placeholder="Enter the text"></textarea>
+					<textarea class="comment__text" name="user-comment" placeholder="Enter text"></textarea>
 				      <button class="commen__btn" type="submit">Send</button>
 				</form>
                         <button class="order__btn" type="button">ORDER A TABLE</button>
@@ -745,7 +745,7 @@
 		</footer>
 
 		<!-- FORM ON ORDER -->
-		<div class="backdrop is-hidden" data-modal >
+		<div class="backdrop" data-modal >
 			<div class="modal ">
 				<button class="modal__btn-close" type="button" data-modal-close >
 				      <svg width="18px" height="18px" >
@@ -753,49 +753,46 @@
 				      </svg>
 				</button>
 				<!-- FORM -->
-				<form class="form" action="www.bigboss.com" name="our customers" >
-				      <h1 class="form__title no-size">Оставьте свои данные, мы вам перезвоним</h1>
-				      <label class="form__label-text">
-				            Имя
-				             <span class="form__box-svg">
-				                  <input class="input form__input" autofocus type="text" name="user-name" pattern="[A-Za-zА-Яа-я ]{100}+" title="Петро Петренко">
-				                  <svg class="form__icon" width="18px" height="18px">
-				                      <use href=""></use>
+				<form class="form" action="" name="order" >
+				      <h1 class="form__title no-size">Leave your contacts and we will call you back</h1>
+				      <label class="form__label">
+				            Name
+				             <span class="form__box">
+				                  <input class="input form__input" autofocus type="text" name="user-name" pattern="[A-Za-zА-Яа-я ]{100}+" title="Petro Petrenko">
+				                  <svg width="18px" height="18px">
+				                      <use href="./src/images/sprite.svg#icon-name"></use>
 				                  </svg>
 				             </span>
 				       </label>
-				       <label class="form__label-text">
+				       <label class="form__label">
 				            Телефон
-				             <span class="form__box-svg"> 
+				             <span class="form__box"> 
 				                   <input class="input form__input" type="tel" name="user-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-099-00-99">
-				                   <svg class="form__icon" width="18px" height="18px">
-				                        <use href=""></use>
+				                   <svg width="18px" height="18px">
+				                        <use href="./src/images/sprite.svg#icon-phone"></use>
 				                  </svg>
 				             </span>
 				       </label>
-				      <label class="form__label-text">
-				            Почта
-				            <span class="form__box-svg">
+				      <label class="form__label">
+				            Email
+				            <span class="form__box">
 				                  <input class="input form__input" type="email" name="user-address-email" pattern="/^[]+@]+\.[]$/i" title="petrenko12p@gmail.com">
-				                        <svg class="form__icon" width="18px" height="18px">
-				                            <use href=""></use>
+				                        <svg width="18px" height="18px">
+				                            <use href="./src/images/sprite.svg#icon-mail"></use>
 				                        </svg>
 				            </span>
 				      </label>
-				      <label class="form__label-text form__label-text--comment">
-				             Комментарий
-				             <textarea class="form__comment input" name="user-comment" placeholder="Введите текст"></textarea>
+				      <label class="form__label form__label--comment">
+				            Сomment
+				             <textarea class="form__comment input" name="user-comment" placeholder="Enter text"></textarea>
 				      </label>
 				            <!-- CHECKBOX -->
 				      <label class="checkebox__label">
-				            <input class="checkebox__input visually-hidden" type="checkbox" >
-				             <svg class="checekebox__icon" width="11px" height="8px">
-					            <use href=""></use>
-				            </svg>
-				            Соглашаюсь с рассылкой и принимаю 
-				            <a class="checekebox__link link" href="#">Условия договора</a>
+				            <input class="checkebox__input" type="checkbox" >
+				            I agree with the mailing and accept it
+				            <a class="checekebox__link link" href="#">conditions of the contract</a>
 				      </label>
-				      <button class="form__btn--modal btn" type="submit">Отправить</button>
+				      <button class="form__btn" type="submit">Send</button>
 				</form>
 			</div>
 		</div>
