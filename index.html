@@ -17,8 +17,10 @@
       </head>
       <body>
            			      
-            <!-- HEADER MOBILE WERSION -->
+            <!-- HEADER AND HERO CONTAINER -->
 		<div class="container">
+
+			<!-- HEADER SECTION -->
 			<header class="mob__head">
 				<svg>
 				      <use href="./src/images/sprite.svg#icon-logo-desk"></use>
@@ -28,7 +30,9 @@
 						<use href="./src/images/sprite.svg#icon-menu-mob"></use>
 					</svg>
 				</button>
-				<nav class="mob-nav is-hidden">
+                    <!-- MOBILE VERSION NAVIGATION -->
+                    <div class="mob__container is-hidden">
+				<nav class="mob-nav">
 					<button class="mob-nav__btn" type="button"  data-mob-close>
 						<svg>
 							<use href="./src/images/sprite.svg#icon-close-menu"></use>
@@ -50,55 +54,43 @@
 					</ul>
 				</nav>
 				<button class="order__btn" type="button">ORDER A TABLE</button>
+			  </div>
+
+			  <!-- DESCTOP VERSION NAVIGATION -->
+			  <div class="desk__container is-hidden">
+				<nav class="desktop__nav">
+					<ul class="desktop-nav__list">
+						<li class="desktop-nav__item">
+							<a class="desktop-nav__link" href="#hero">Main</a>
+						</li>
+						<li class="desktop-nav__item">
+							<a class="desktop-nav__link" href="#menu">Menu</a>
+						</li>
+						<li class="desktop-nav__item">
+							<a class="desktop-nav__link" href="#history">About</a>
+						</li>
+						<li class="desktop-nav__item gg">
+							<a class="desktop-nav__link" href="#">Rererve</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contact">
+					<svg>
+						<use href="./src/images/sprite.svg#icon-phone"></use>
+					</svg>
+					<a class="contact__link" href="tel:+234567890">+234567890</a>
+					<p class="contact__text">Contact us to reserve a table</p>
+				</div>
+				<button class="order__btn" type="button">ORDER A TABLE</button>
+			  </div>
 			</header>
 		
 			<!-- HERO SECTION -->
-			<section class="hero">
+			<section id="hero" class="hero">
 			  <p class="hero__text">Welcome to our restaurant</p>
 			  <h1 class="hero__title">HOME OF BETTER FOOD</h1>
 			  <button class="hero__btn" type="button">MENU</button>
 			</section> 
-		</div>
-
-
-            <!-- HEADER DESKTOP WERSION -->
-		<div id="hero" class="desktop container .menu__item--desk">
-			<header class="desktop__head">
-					<svg>
-						<use href="./src/images/sprite.svg#icon-logo-desk"></use>
-					</svg>
-					<nav class="desktop__nav">
-						<ul class="desktop-nav__list">
-							<li class="desktop-nav__item">
-								<a class="desktop-nav__link" href="#hero">Main</a>
-							</li>
-							<li class="desktop-nav__item">
-								<a class="desktop-nav__link" href="#menu">Menu</a>
-						      </li>
-						      <li class="desktop-nav__item">
-							      <a class="desktop-nav__link" href="#history">About</a>
-					            </li>
-						      <li class="desktop-nav__item gg">
-							      <a class="desktop-nav__link" href="#">Rererve</a>
-					            </li>
-						</ul>
-					</nav>
-					<div class="contact">
-						<svg>
-							<use href="./src/images/sprite.svg#icon-phone"></use>
-						</svg>
-						<a class="contact__link" href="tel:+234567890">+234567890</a>
-						<p class="contact__text">Contact us to reserve a table</p>
-					</div>
-					<button class="order__btn" type="button">ORDER A TABLE</button>
-			</header>
-
-			<!-- HERO SECTION -->
-			<section class="hero">
-					<p class="hero__text">Welcome to our restaurant</p>
-					<h1 class="hero__title">HOME OF BETTER FOOD</h1>
-					<button class="hero__btn" type="button">MENU</button>
-			</section>
 		</div>
                   
 		<!-- PRINCIPLE SECTION -->
