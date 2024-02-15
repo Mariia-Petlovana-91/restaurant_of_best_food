@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
      <head>
-         <meta charset="UTF-8" />
-         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-         <title></title>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>HOME_OF_BETTER_FOOD</title>
             <link
                rel="stylesheet"
                href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
                integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-               crossorigin="anonymous"
-            />
+               crossorigin="anonymous">
 		<link rel="stylesheet" href="./src/sass/main.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@400;500;600&family=Tinos:wght@700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@400;500;600&family=Tinos:wght@700&display=swap"
+		rel="stylesheet">
       </head>
       <body>
            			      
             <!-- HEADER MOBILE WERSION -->
 		<div class="container">
 			<header class="mob__head">
-				<svg width="40px" heigth="40px">
-								<use href="./src/images/sprite.svg#icon-logo-desk"></use>
+				<svg>
+				      <use href="./src/images/sprite.svg#icon-logo-desk"></use>
 				</svg>
 				<button class="mob-nav__btn" type="button" data-mob-open>
-					<svg width="40px" heigth="40px">
+					<svg>
 						<use href="./src/images/sprite.svg#icon-menu-mob"></use>
 					</svg>
 				</button>
 				<nav class="mob-nav is-hidden">
 					<button class="mob-nav__btn" type="button"  data-mob-close>
-						<svg width="40px" heigth="40px">
+						<svg>
 							<use href="./src/images/sprite.svg#icon-close-menu"></use>
 						</svg>
 					</button>
@@ -62,9 +62,9 @@
 
 
             <!-- HEADER DESKTOP WERSION -->
-		<div id="hero" class="desktop container is-hidden">
+		<div id="hero" class="desktop container .menu__item--desk">
 			<header class="desktop__head">
-					<svg width="40px" heigth="40px">
+					<svg>
 						<use href="./src/images/sprite.svg#icon-logo-desk"></use>
 					</svg>
 					<nav class="desktop__nav">
@@ -106,7 +106,7 @@
                   <div class="container">
 				<ul class="principle__list">
 					<li class="principle__item">
-						<svg aria-hidden="true" width="87px" heigth="87px">
+						<svg>
 							<use href="./src/images/sprite.svg#icon-food"></use>
 						</svg>
 						<h3 class="principle__title">Magical
@@ -120,7 +120,7 @@
 						</p>
 					</li>
 					<li class="principle__item">
-						<svg aria-hidden="true" width="87px" heigth="87px">
+						<svg>
 							<use href="./src/images/sprite.svg#icon-food"></use>
 						</svg>
 						<h3 class="principle__title">The best quality of
@@ -134,7 +134,7 @@
 						</p>
 					</li>
 					<li class="principle__item">
-						<svg aria-hidden="true" width="87px" heigth="87px">
+						<svg>
 							<use href="./src/images/sprite.svg#icon-food"></use>
 						</svg>
 						<h3 class="principle__title">Сheap 
@@ -189,18 +189,20 @@
 				</ul>
 				<ul class="history__imgList">
 					<li class="history__imgItem">
-						<picture width="100px" heigth="100px">
+						<picture>
   
-							<source srcset="./src/images/slide/slide-three-desk.jpg,
-							./src/images/slide/slide-three-desk@2x.jpg">
-							<source srcset="./src/images/slide/slide-two-desk.webp ,
-							./src/images/slide/slide-two-mob@2x.webp"
+							<source media="(min-width:1080px)" srcset="./src/images/slide/slide-three-desk.jpg,
+							./src/images/slide/slide-three-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/slide/slide-two-desk.webp ,
+							./src/images/slide/slide-two-mob@2x.webp 2x"
 							type="image/webp">
   
-							<source srcset="./src/images/slide/slide-three-mob.jpg,
-							./src/images/slide/slide-three-mob@2x.jpg">
-							<source srcset="./src/images/slide/slide-three-desk.webp,
-							./src/images/slide/slide-three-mob@2x.webp"
+							<source media="(min-width:520px)" srcset="./src/images/slide/slide-three-mob.jpg,
+							./src/images/slide/slide-three-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/slide/slide-three-desk.webp,
+							./src/images/slide/slide-three-mob@2x.webp 2x"
 							type="image/webp">
 					  
 							<img src="#" alt="interior of the restaurant,
@@ -208,36 +210,40 @@
 						</picture>
 					</li>
 					<li class="history__imgItem">
-						<picture width="100px" heigth="100px">
+						<picture>
   
-							<source srcset="./src/images/slide/slide-two-desk.jpg , 
-							./src/images/slide/slide-two-desk@2x.jpg">
-							<source srcset="./src/images/slide/slide-two-desk.webp , 
-							./src/images/slide/slide-two-desk@2x.webp"
+							<source media="(min-width:1080px)" srcset="./src/images/slide/slide-two-desk.jpg , 
+							./src/images/slide/slide-two-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/slide/slide-two-desk.webp , 
+							./src/images/slide/slide-two-desk@2x.webp 2x"
 							type="image/webp">
   
-							<source srcset="./src/images/slide/slide-two-mob.jpg ,
-							./src/images/slide/slide-two-mob@2x.jpg">
-							<source srcset="./src/images/slide/slide-two-desk.webp ,
-							./src/images/slide/slide-two-mob@2x.webp"
+							<source media="(min-width:520px)" srcset="./src/images/slide/slide-two-mob.jpg ,
+							./src/images/slide/slide-two-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/slide/slide-two-desk.webp ,
+							./src/images/slide/slide-two-mob@2x.webp 2x"
 							type="image/webp">
 					  
 							<img src="#" alt="photo of a piece of green cake">
 						</picture>
 					</li>
 					<li class="history__imgItem">
-						<picture width="100px" heigth="100px">
+						<picture>
   
-							<source srcset="./src/images/slide/slide-three-desk.jpg,
-							./src/images/slide/slide-three-desk@2x.jpg">
-							<source srcset="./src/images/slide/slide-two-desk.webp ,
-							  ./src/images/slide/slide-two-mob@2x.webp"
+							<source media="(min-width:1080px)" srcset="./src/images/slide/slide-three-desk.jpg,
+							./src/images/slide/slide-three-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/slide/slide-two-desk.webp ,
+							  ./src/images/slide/slide-two-mob@2x.webp 2x"
 							type="image/webp">
   
-							<source srcset="./src/images/slide/slide-three-mob.jpg,
-							./src/images/slide/slide-three-mob@2x.jpg">
-							<source srcset="./src/images/slide/slide-three-desk.webp,
-							  ./src/images/slide/slide-three-mob@2x.webp"
+							<source media="(min-width:520px)" srcset="./src/images/slide/slide-three-mob.jpg,
+							./src/images/slide/slide-three-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/slide/slide-three-desk.webp,
+							  ./src/images/slide/slide-three-mob@2x.webp 2x"
 							type="image/webp">
 					  
 							<img src="#" alt="interior of the restaurant,
@@ -261,36 +267,40 @@
 				<h2 class="dishes__title">Our
 					<span class="dishes__el">Dishes </span>
 				</h2>
-				<picture width="100px" heigth="100px">
+				<picture>
 				 
-					<source srcset="./src/images/ourDishes/pizza-desk.jpg ,
-					./src/images/ourDishes/pizza-desk@2x.jpg">
-					<source srcset="./src/images/ourDishes/pizza-desk.webp ,
-					./src/images/ourDishes/pizza-desk@2x.webp"
+					<source media="(min-width:1080px)" srcset="./src/images/ourDishes/pizza-desk.jpg ,
+					./src/images/ourDishes/pizza-desk@2x.jpg 2x"
+					type="image/jpg">
+					<source media="(min-width:1080px)" srcset="./src/images/ourDishes/pizza-desk.webp ,
+					./src/images/ourDishes/pizza-desk@2x.webp 2x"
 					type="image/webp">
 
-					<source srcset="./src/images/ourDishes/pizza-mob.jpg ,
-					./src/images/ourDishes/pizza-mob@2x.jpg">
-					<source srcset="./src/images/ourDishes/pizza-mob.webp,
-					./src/images/ourDishes/pizza-mob@2x.webp"
+					<source media="(min-width:520px)" srcset="./src/images/ourDishes/pizza-mob.jpg ,
+					./src/images/ourDishes/pizza-mob@2x.jpg 2x"
+					type="image/jpg">
+					<source media="(min-width:520px)" srcset="./src/images/ourDishes/pizza-mob.webp,
+					./src/images/ourDishes/pizza-mob@2x.webp 2x"
 					type="image/webp"> 
 			
 					<img src="#" alt="photo pizza">
 				</picture>
 				<ul class="dishes__ilst">
                               <li class="dishes__item">
-						<picture width="100px" heigth="100px">
+						<picture>
 				 
-							<source srcset="./src/images/ourDishes/hamburger-desk.jpg ,
-							./src/images/ourDishes/hamburger-desk@2x.jpg">
-							<source srcset="./src/images/ourDishes/hamburger-desk.webp ,
-							./src/images/ourDishes/hamburger-desk@2x.webp"
+							<source media="(min-width:1080px)" srcset="./src/images/ourDishes/hamburger-desk.jpg ,
+							./src/images/ourDishes/hamburger-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/ourDishes/hamburger-desk.webp ,
+							./src/images/ourDishes/hamburger-desk@2x.webp 2x"
 							type="image/webp">
 		
-							<source srcset="./src/images/ourDishes/hamburger-mob.jpg ,
-							./src/images/ourDishes/hamburger-mob@2x.jpg">
-							<source srcset="./src/images/ourDishes/hamburger-mob.webp,
-							./src/images/ourDishes/hamburger-mob@2x.webp"
+							<source media="(min-width:520px)" srcset="./src/images/ourDishes/hamburger-mob.jpg ,
+							./src/images/ourDishes/hamburger-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/ourDishes/hamburger-mob.webp,
+							./src/images/ourDishes/hamburger-mob@2x.webp 2x"
 							type="image/webp"> 
 					
 							<img src="#" alt="photo hamburger">
@@ -300,18 +310,20 @@
 						</p>
 					</li>
 					<li class="dishes__item">
-						<picture width="100px" heigth="100px">
+						<picture>
 				 
-							<source srcset="./src/images/ourDishes/hamburger-desk.jpg ,
-							./src/images/ourDishes/hamburger-desk@2x.jpg">
-							<source srcset="./src/images/ourDishes/hamburger-desk.webp ,
-							./src/images/ourDishes/hamburger-desk@2x.webp"
+							<source media="(min-width:1080px)" srcset="./src/images/ourDishes/hamburger-desk.jpg ,
+							./src/images/ourDishes/hamburger-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/ourDishes/hamburger-desk.webp ,
+							./src/images/ourDishes/hamburger-desk@2x.webp 2x"
 							type="image/webp">
 		
-							<source srcset="./src/images/ourDishes/hamburger-mob.jpg ,
-							./src/images/ourDishes/hamburger-mob@2x.jpg">
-							<source srcset="./src/images/ourDishes/hamburger-mob.webp,
-							./src/images/ourDishes/hamburger-mob@2x.webp"
+							<source media="(min-width:520px)" srcset="./src/images/ourDishes/hamburger-mob.jpg ,
+							./src/images/ourDishes/hamburger-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/ourDishes/hamburger-mob.webp,
+							./src/images/ourDishes/hamburger-mob@2x.webp 2x"
 							type="image/webp"> 
 					
 							<img src="#" alt="photo hamburger">
@@ -321,18 +333,20 @@
 						</p>
 					</li>
 					<li class="dishes__item">
-						<picture width="100px" heigth="100px">
+						<picture>
 				 
-							<source srcset="./src/images/ourDishes/hamburger-desk.jpg ,
-							./src/images/ourDishes/hamburger-desk@2x.jpg">
-							<source srcset="./src/images/ourDishes/hamburger-desk.webp ,
-							./src/images/ourDishes/hamburger-desk@2x.webp"
+							<source media="(min-width:1080px)" srcset="./src/images/ourDishes/hamburger-desk.jpg ,
+							./src/images/ourDishes/hamburger-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/ourDishes/hamburger-desk.webp ,
+							./src/images/ourDishes/hamburger-desk@2x.webp 2x"
 							type="image/webp">
 		
-							<source srcset="./src/images/ourDishes/hamburger-mob.jpg ,
-							./src/images/ourDishes/hamburger-mob@2x.jpg">
-							<source srcset="./src/images/ourDishes/hamburger-mob.webp,
-							./src/images/ourDishes/hamburger-mob@2x.webp"
+							<source media="(min-width:520px)" srcset="./src/images/ourDishes/hamburger-mob.jpg ,
+							./src/images/ourDishes/hamburger-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/ourDishes/hamburger-mob.webp,
+							./src/images/ourDishes/hamburger-mob@2x.webp 2x"
 							type="image/webp"> 
 					
 							<img src="#" alt="photo hamburger">
@@ -349,79 +363,78 @@
 		<section id="menu" class="menu">
 			<div class="container">
 				<h2 class="menu__title" >Our menu</h2>
-				<ul menu__list>
+				<ul class="menu__list">
 					<li class="menu__item">
-						<a class="menu__link" href="">
-							<p class="menu__rec">RECOMMENDED</p>
-							<picture width="100px" heigth="100px">
-				 
-								<source srcset="./src/images/menu/menu-desk.jpg ,
-								./src/images/menu/menu-desk@2x.jpg">
-								<source srcset="./src/images/menu/menu-desk.webp ,
-								./src/images/menu/menu-desk@2x.webp"
-								type="image/webp">
+						<p class="menu__rec">RECOMMENDED</p>
+						<picture>
+			 
+							<source media="(min-width:1080px)" srcset="./src/images/menu/menu-desk.jpg ,
+							./src/images/menu/menu-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/menu/menu-desk.webp ,
+							./src/images/menu/menu-desk@2x.webp 2x"
+							type="image/webp">
 
-								<source srcset="./src/images/menu/menu-mob.jpg ,
-								./src/images/menu/menu-mob@2x.jpg">
-								<source srcset="./src/images/menu/menu-mob.webp,
-								./src/images/menu/menu-mob@2x.webp"
-								type="image/webp"> 
-						
-							      <img src="#" alt="photo bar">
-							</picture>
-							<p class="menu__price">$22</p>
-							<h3 class="menu__title--el">Hamburger mix</h3>
-							<p class="menu__decript">The thickest layer of meat</p>
-							<button class="menu__btn" type="button">ORDER</button>
-						</a>
-					</li>
-				<li class="menu__item menu__item--desk">
-						<a class="menu__link" href="">
-							<picture width="100px" heigth="100px">
- 
-								<source srcset="./src/images/menu/menu-desk.jpg ,
-								./src/images/menu/menu-desk@2x.jpg">
-								<source srcset="./src/images/menu/menu-desk.webp ,
-								./src/images/menu/menu-desk@2x.webp"
-								type="image/webp" >
-
-								<source srcset="./src/images/menu/menu-mob.jpg ,
-								./src/images/menu/menu-mob@2x.jpg">
-								<source srcset="./src/images/menu/menu-mob.webp,
-								./src/images/menu/menu-mob@2x.webp"
-								type="image/webp">
-						
-							     <img src="#" alt="photo bar">
-							</picture>
-							<p class="menu__price">$22</p>
-							<h3 class="menu__title--el">Hamburger mix</h3>
-							<p class="menu__decript">The thickest layer of meat</p>
-							<button class="menu__btn" type="button">ORDER</button>
-						</a>
+							<source media="(min-width:520px)" srcset="./src/images/menu/menu-mob.jpg ,
+							./src/images/menu/menu-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/menu/menu-mob.webp,
+							./src/images/menu/menu-mob@2x.webp 2x"
+							type="image/webp"> 
+					
+							<img src="#" alt="photo bar">
+						</picture>
+						<p class="menu__price">$22</p>
+						<h3 class="menu__title--el">Hamburger mix</h3>
+						<p class="menu__decript">The thickest layer of meat</p>
+						<button class="menu__btn" type="button">ORDER</button>
 					</li>
 				      <li class="menu__item menu__item--desk">
-						<a class="menu__link" href="">
-							<picture width="100px" heigth="100px">
+						<picture>
+ 
+							<source media="(min-width:1080px)" srcset="./src/images/menu/menu-desk.jpg ,
+							./src/images/menu/menu-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/menu/menu-desk.webp ,
+							./src/images/menu/menu-desk@2x.webp 2x"
+							type="image/webp" >
 
-								<source srcset="./src/images/menu/menu-desk.jpg ,
-								./src/images/menu/menu-desk@2x.jpg">
-								<source srcset="./src/images/menu/menu-desk.webp ,
-								./src/images/menu/menu-desk@2x.webp"
-								type="image/webp" >
+							<source media="(min-width:520px)" srcset="./src/images/menu/menu-mob.jpg ,
+							./src/images/menu/menu-mob@2x.jpg 2x">
+							<source media="(min-width:1080px)" srcset="./src/images/menu/menu-mob.webp,
+							./src/images/menu/menu-mob@2x.webp 2x"
+							type="image/webp">
+					
+						     <img src="#" alt="photo bar">
+						</picture>
+						<p class="menu__price">$22</p>
+						<h3 class="menu__title--el">Hamburger mix</h3>
+						<p class="menu__decript">The thickest layer of meat</p>
+						<button class="menu__btn" type="button">ORDER</button>
+					</li>
+				      <li class="menu__item menu__item--desk">
+						<picture>
 
-								<source srcset="./src/images/menu/menu-mob.jpg ,
-								./src/images/menu/menu-mob@2x.jpg">
-                                                <source srcset="./src/images/menu/menu-mob.webp,
-								./src/images/menu/menu-mob@2x.webp"
-								type="image/webp"> 
-						
-							      <img src="../src/images/menu/menu-mob.webp" alt="photo bar">
-							</picture>
-							<p class="menu__price">$22</p>
-							<h3 class="menu__title--el">Hamburger mix</h3>
-							<p class="menu__decript">The thickest layer of meat</p>
-							<button class="menu__btn" type="button">ORDER</button>
-						</a>
+							<source media="(min-width:1080px)" srcset="./src/images/menu/menu-desk.jpg ,
+							./src/images/menu/menu-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/menu/menu-desk.webp ,
+							./src/images/menu/menu-desk@2x.webp 2x"
+							type="image/webp" >
+
+							<source media="(min-width:520px)" srcset="./src/images/menu/menu-mob.jpg ,
+							./src/images/menu/menu-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/menu/menu-mob.webp,
+							./src/images/menu/menu-mob@2x.webp 2x"
+							type="image/webp"> 
+					
+							<img src="../src/images/menu/menu-mob.webp" alt="photo bar">
+						</picture>
+						<p class="menu__price">$22</p>
+						<h3 class="menu__title--el">Hamburger mix</h3>
+						<p class="menu__decript">The thickest layer of meat</p>
+						<button class="menu__btn" type="button">ORDER</button>
 					</li>
 				</ul>
 			</div>
@@ -435,21 +448,23 @@
 					<p class="reviews__text">
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, reiciendis odit blanditiis sint similique est nesciunt incidunt alias odio animi doloremque pariatur iste esse corrupti? Omnis, sit magni quidem quia ad quas quo accusamus praesentium rerum, consectetur corrupti eaque consequatur.
 					</p>
-					<picture width="100px" heigth="100px">
+					<picture>
 				 
 						<source srcset="./src/images/reviews/reviews-desk.jpg ,
-						./src/images/reviews/reviews-desk@2x.jpg">
-						<source srcset="./src/images/reviews/reviews-desk.webp ,
-						./src/images/reviews/reviews-desk@2x.webp"
+						./src/images/reviews/reviews-desk@2x.jpg 2x"
+						type="image/jpg">
+						<source media="(min-width:1080px)" srcset="./src/images/reviews/reviews-desk.webp ,
+						./src/images/reviews/reviews-desk@2x.webp 2x"
 						type="image/webp">
 	
-						<source srcset="./src/images/reviews/reviews-mob.jpg ,
-						./src/images/reviews/reviews-mob.@2x.jpg">
-						<source srcset="./src/images/reviews/reviews-mob..webp,
-						./src/images/reviews/reviews-mob.@2x.webp"
+						<source media="(min-width:520px)" srcset="./src/images/reviews/reviews-mob.jpg ,
+						./src/images/reviews/reviews-mob.@2x.jpg 2x"
+						type="image/jpg">
+						<source media="(min-width:520px)" srcset="./src/images/reviews/reviews-mob..webp,
+						./src/images/reviews/reviews-mob.@2x.webp 2x"
 						type="image/webp"> 
 				
-						<img src="#" alt="photo visito"/>
+						<img src="#" alt="photo visito">
 					</picture>
 					<h3 class="reviews__title">Visitor</h3>
 					<p class="reviews__name">Jozef</p>
@@ -458,18 +473,20 @@
 					<p class="reviews__text">
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, reiciendis odit blanditiis sint similique est nesciunt incidunt alias odio animi doloremque pariatur iste esse corrupti? Omnis, sit magni quidem quia ad quas quo accusamus praesentium rerum, consectetur corrupti eaque consequatur.
 					</p>
-					<picture width="100px" heigth="100px">
+					<picture>
 				 
-						<source srcset="./src/images/reviews/reviews-desk.jpg ,
-						./src/images/reviews/reviews-desk@2x.jpg">
-						<source srcset="./src/images/reviews/reviews-desk.webp ,
-						./src/images/reviews/reviews-desk@2x.webp"
+						<source media="(min-width:1080px)" srcset="./src/images/reviews/reviews-desk.jpg ,
+						./src/images/reviews/reviews-desk@2x.jpg 2x"
+						type="image/jpg">
+						<source media="(min-width:1080px)" srcset="./src/images/reviews/reviews-desk.webp ,
+						./src/images/reviews/reviews-desk@2x.webp 2x"
 						type="image/webp">
 	
-						<source srcset="./src/images/reviews/reviews-mob.jpg ,
-						./src/images/reviews/reviews-mob.@2x.jpg">
-						<source srcset="./src/images/reviews/reviews-mob..webp,
-						./src/images/reviews/reviews-mob.@2x.webp"
+						<source media="(min-width:520px)" srcset="./src/images/reviews/reviews-mob.jpg ,
+						./src/images/reviews/reviews-mob.@2x.jpg 2x"
+						type="image/jpg">
+						<source media="(min-width:520px)" srcset="./src/images/reviews/reviews-mob..webp,
+						./src/images/reviews/reviews-mob.@2x.webp 2x"
 						type="image/webp"> 
 				
 						<img src="#" alt="photo visitor">
@@ -481,18 +498,20 @@
 					<p class="reviews__text">
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, reiciendis odit blanditiis sint similique est nesciunt incidunt alias odio animi doloremque pariatur iste esse corrupti? Omnis, sit magni quidem quia ad quas quo accusamus praesentium rerum, consectetur corrupti eaque consequatur.
 					</p>
-					<picture width="100px" heigth="100px">
+					<picture>
 				 
-						<source srcset="./src/images/reviews/reviews-desk.jpg ,
-						./src/images/reviews/reviews-desk@2x.jpg">
-						<source srcset="./src/images/reviews/reviews-desk.webp ,
-						./src/images/reviews/reviews-desk@2x.webp"
+						<source media="(min-width:1080px)" srcset="./src/images/reviews/reviews-desk.jpg ,
+						./src/images/reviews/reviews-desk@2x.jpg 2x"
+						type="image/jpg">
+						<source media="(min-width:1080px)" srcset="./src/images/reviews/reviews-desk.webp ,
+						./src/images/reviews/reviews-desk@2x.webp 2x"
 						type="image/webp">
 	
-						<source srcset="./src/images/reviews/reviews-mob.jpg ,
-						./src/images/reviews/reviews-mob.@2x.jpg">
-						<source srcset="./src/images/reviews/reviews-mob..webp,
-						./src/images/reviews/reviews-mob.@2x.webp"
+						<source media="(min-width:520px)" srcset="./src/images/reviews/reviews-mob.jpg ,
+						./src/images/reviews/reviews-mob.@2x.jpg 2x"
+						type="image/jpg">
+						<source media="(min-width:520px)" srcset="./src/images/reviews/reviews-mob..webp,
+						./src/images/reviews/reviews-mob.@2x.webp 2x"
 						type="image/webp"> 
 				
 						<img src="#" alt="photo visitor">
@@ -511,23 +530,20 @@
 			     <ul class="gallery__list">
                             <li class="gallery__item">
 					  <a class="gallery__link" href="#">
-						<picture width="100px" heigth="100px">
-				 
-							<source srcset="./src/images/foodGallery/wine-mob.jpg ,
-							./src/images/foodGallery/wine-mob@2x.jpg">
-							<source srcset="./src/images/foodGallery/wine-mob.webp ,
-							./src/images/foodGallery/wine-mob@2x.webp"
+						<picture>
+			     
+							<source media="(min-width:1080px)" srcset="./src/images/foodGallery/wine-desk.jpg ,
+							./src/images/foodGallery/wine-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/foodGallery/wine-desk.webp ,
+							./src/images/foodGallery/wine-desk@2x.webp 2x"
 							type="image/webp">
-
-							<img src="#" alt="photo glass">
-						</picture>
-
-						<picture class="is-hidden" width="100px" heigth="100px">
-				 
-							<source srcset="./src/images/foodGallery/wine-desk.jpg ,
-							./src/images/foodGallery/wine-desk@2x.jpg">
-							<source srcset="./src/images/foodGallery/wine-desk.webp ,
-							./src/images/foodGallery/wine-desk@2x.webp"
+  
+							<source media="(min-width:520px)" srcset="./src/images/foodGallery/wine-mob.jpg ,
+							./src/images/foodGallery/wine-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/foodGallery/wine-mob.webp ,
+							./src/images/foodGallery/wine-mob@2x.webp 2x"
 							type="image/webp">
 											
 							<img src="#" alt="photo glass">
@@ -536,18 +552,20 @@
 				    </li>
 				    <li class="gallery__item">
 					<a class="gallery__link" href="#">
-						<picture width="100px" heigth="100px">
+						<picture>
 				 
-							<source srcset="./src/images/foodGallery/coffee-desk.jpg ,
-							./src/images/foodGallery/coffee-desk@2x.jpg">
-							<source srcset="./src/images/foodGallery/coffee-desk.webp ,
-							./src/images/foodGallery/coffee-desk@2x.webp"
+							<source media="(min-width:1080px)" srcset="./src/images/foodGallery/coffee-desk.jpg ,
+							./src/images/foodGallery/coffee-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/foodGallery/coffee-desk.webp ,
+							./src/images/foodGallery/coffee-desk@2x.webp 2x"
 							type="image/webp">
 		
-							<source srcset="./src/images/foodGallery/coffee-mob.jpg ,
-							./src/images/foodGallery/coffee-mob@2x.jpg">
-							<source srcset="./src/images/foodGallery/coffee-mob.webp,
-							./src/images/foodGallery/coffee-mob@2x.webp"
+							<source media="(min-width:520px)" srcset="./src/images/foodGallery/coffee-mob.jpg ,
+							./src/images/foodGallery/coffee-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/foodGallery/coffee-mob.webp,
+							./src/images/foodGallery/coffee-mob@2x.webp 2x"
 							type="image/webp"> 
 					
 							<img src="#" alt="photo coffe">
@@ -556,18 +574,20 @@
 				     </li>
 				     <li class="gallery__item">
 					<a class="gallery__link" href="#">
-						<picture width="100px" heigth="100px">
+						<picture>
 				 
-							<source srcset="./src/images/foodGallery/goulash-desk.jpg ,
-							./src/images/foodGallery/goulash-desk@2x.jpg">
-							<source srcset="./src/images/foodGallery/goulash-desk.webp ,
-							./src/images/foodGallery/goulash-desk@2x.webp"
+							<source media="(min-width:1080px)" srcset="./src/images/foodGallery/goulash-desk.jpg ,
+							./src/images/foodGallery/goulash-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/foodGallery/goulash-desk.webp ,
+							./src/images/foodGallery/goulash-desk@2x.webp 2x"
 							type="image/webp">
 		
-							<source srcset="./src/images/foodGallery/goulash-mob.jpg ,
-							./src/images/foodGallery/goulash-mob@2x.jpg">
-							<source srcset="./src/images/foodGallery/goulash-mob.webp,
-							./src/images/foodGallery/goulash-desk@2x.webp"
+							<source media="(min-width:520px)" srcset="./src/images/foodGallery/goulash-mob.jpg ,
+							./src/images/foodGallery/goulash-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/foodGallery/goulash-mob.webp,
+							./src/images/foodGallery/goulash-desk@2x.webp 2x"
 							type="image/webp"> 
 					
 							<img src="#" alt="photo goulash">
@@ -576,23 +596,20 @@
 				     </li>
 				     <li class="gallery__item">
 					<a class="gallery__link" href="#">
-					    <picture width="100px" heigth="100px">
-			     
-						    <source srcset="./src/images/foodGallery/wine-mob.jpg ,
-						    ./src/images/foodGallery/wine-mob@2x.jpg">
-						    <source srcset="./src/images/foodGallery/wine-mob.webp ,
-						    ./src/images/foodGallery/wine-mob@2x.webp"
+					    <picture>
+			   
+						    <source media="(min-width:1080px)" srcset="./src/images/foodGallery/wine-desk.jpg ,
+						    ./src/images/foodGallery/wine-desk@2x.jpg 2x"
+						    type="image/jpg">
+						    <source media="(min-width:1080px)" srcset="./src/images/foodGallery/wine-desk.webp ,
+						    ./src/images/foodGallery/wine-desk@2x.webp 2x"
 						    type="image/webp">
 
-						    <img src="#" alt="photo glass">
-					    </picture>
-
-					    <picture class="is-hidden" width="100px" heigth="100px">
-			     
-						    <source srcset="./src/images/foodGallery/wine-desk.jpg ,
-						    ./src/images/foodGallery/wine-desk@2x.jpg">
-						    <source srcset="./src/images/foodGallery/wine-desk.webp ,
-						    ./src/images/foodGallery/wine-desk@2x.webp"
+						    <source media="(min-width:520px)" srcset="./src/images/foodGallery/wine-mob.jpg ,
+						    ./src/images/foodGallery/wine-mob@2x.jpg 2x"
+						    type="image/jpg">
+						    <source media="(min-width:520px)" srcset="./src/images/foodGallery/wine-mob.webp ,
+						    ./src/images/foodGallery/wine-mob@2x.webp 2x"
 						    type="image/webp">
 										    
 						    <img src="#" alt="photo glass">
@@ -601,18 +618,20 @@
 				  </li>
 				  <li class="gallery__item">
 				    <a class="gallery__link" href="#">
-					    <picture width="100px" heigth="100px">
+					    <picture>
 			     
-						    <source srcset="./src/images/foodGallery/coffee-desk.jpg ,
-						    ./src/images/foodGallery/coffee-desk@2x.jpg">
-						    <source srcset="./src/images/foodGallery/coffee-desk.webp ,
-						    ./src/images/foodGallery/coffee-desk@2x.webp"
+						    <source media="(min-width:1080px)" srcset="./src/images/foodGallery/coffee-desk.jpg ,
+						    ./src/images/foodGallery/coffee-desk@2x.jpg 2x"
+						    type="image/jpg">
+						    <source media="(min-width:1080px)" srcset="./src/images/foodGallery/coffee-desk.webp ,
+						    ./src/images/foodGallery/coffee-desk@2x.webp 2x"
 						    type="image/webp">
 	    
-						    <source srcset="./src/images/foodGallery/coffee-mob.jpg ,
-						    ./src/images/foodGallery/coffee-mob@2x.jpg">
-						    <source srcset="./src/images/foodGallery/coffee-mob.webp,
-						    ./src/images/foodGallery/coffee-mob@2x.webp"
+						    <source media="(min-width:520px)" srcset="./src/images/foodGallery/coffee-mob.jpg ,
+						    ./src/images/foodGallery/coffee-mob@2x.jpg 2x"
+						    type="image/jpg">
+						    <source media="(min-width:520px)" srcset="./src/images/foodGallery/coffee-mob.webp,
+						    ./src/images/foodGallery/coffee-mob@2x.webp 2x"
 						    type="image/webp"> 
 				    
 						    <img src="#" alt="photo coffe">
@@ -621,18 +640,20 @@
 				   </li>
 				   <li class="gallery__item">
 				    <a class="gallery__link" href="#">
-					    <picture width="100px" heigth="100px">
+					    <picture>
 			     
-						    <source srcset="./src/images/foodGallery/goulash-desk.jpg ,
-						    ./src/images/foodGallery/goulash-desk@2x.jpg">
-						    <source srcset="./src/images/foodGallery/goulash-desk.webp ,
-						    ./src/images/foodGallery/goulash-desk@2x.webp"
+						    <source media="(min-width:1080px)" srcset="./src/images/foodGallery/goulash-desk.jpg ,
+						    ./src/images/foodGallery/goulash-desk@2x.jpg 2x"
+						    type="image/jpg">
+						    <source media="(min-width:1080px)" srcset="./src/images/foodGallery/goulash-desk.webp ,
+						    ./src/images/foodGallery/goulash-desk@2x.webp 2x"
 						    type="image/webp">
 	    
-						    <source srcset="./src/images/foodGallery/goulash-mob.jpg ,
-						    ./src/images/foodGallery/goulash-mob@2x.jpg">
-						    <source srcset="./src/images/foodGallery/goulash-mob.webp,
-						    ./src/images/foodGallery/goulash-desk@2x.webp"
+						    <source media="(min-width:520px)" srcset="./src/images/foodGallery/goulash-mob.jpg ,
+						    ./src/images/foodGallery/goulash-mob@2x.jpg 2x"
+						    type="image/jpg">
+						    <source media="(min-width:520px)" srcset="./src/images/foodGallery/goulash-mob.webp,
+						    ./src/images/foodGallery/goulash-desk@2x.webp 2x"
 						    type="image/webp"> 
 				    
 						    <img src="#" alt="photo goulash">
@@ -649,54 +670,60 @@
 				<h2 class="cooks">Our <span class="cooks__el">Cooks</span></h2>
 				<ul class="cooks__list">
 					<li class="cooks__item">
-						<picture width="100px" heigth="100px">
+						<picture>
 				 
-							<source srcset="./src/images/ourCooks/cook-one-desk.jpg ,
-							./src/images/ourCooks/cook-one-desk@2x.jpg">
-							<source srcset="./src/images/ourCooks/cook-one-desk.webp ,
-							./src/images/ourCooks/cook-one-desk@2x.webp"
+							<source media="(min-width:1080px)" srcset="./src/images/ourCooks/cook-one-desk.jpg ,
+							./src/images/ourCooks/cook-one-desk@2x.jpg 2x"
+							type="image/type">
+							<source media="(min-width:1080px)" srcset="./src/images/ourCooks/cook-one-desk.webp ,
+							./src/images/ourCooks/cook-one-desk@2x.webp 2x"
 							type="image/webp">
 		
-							<source srcset="./src/images/ourCooks/cook-one-mob.jpg ,
-							./src/images/ourCooks/cook-one-mob@2x.jpg">
-							<source srcset="./src/images/ourCooks/cook-one-mob.webp,
-							./src/images/ourCooks/cook-one-mob@2x.webp"
+							<source media="(min-width:520px)" srcset="./src/images/ourCooks/cook-one-mob.jpg ,
+							./src/images/ourCooks/cook-one-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/ourCooks/cook-one-mob.webp,
+							./src/images/ourCooks/cook-one-mob@2x.webp 2x"
 							type="image/webp"> 
 					
 							<img src="#" alt="photo cook">
 						</picture> 
 					</li>
 					<li class="cooks__item">
-						<picture width="100px" heigth="100px">
+						<picture>
 				 
-							<source srcset="./src/images/ourCooks/cook-two-desk.jpg ,
-							./src/images/ourCooks/cook-two-desk@2x.jpg">
-							<source srcset="./src/images/ourCooks/cook-two-desk.webp ,
-							./src/images/ourCooks/cook-two-desk@2x.webp"
+							<source media="(min-width:1080px)" srcset="./src/images/ourCooks/cook-two-desk.jpg ,
+							./src/images/ourCooks/cook-two-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/ourCooks/cook-two-desk.webp ,
+							./src/images/ourCooks/cook-two-desk@2x.webp 2x"
 							type="image/webp">
 		
-							<source srcset="./src/images/ourCooks/cook-two-mob.jpg ,
-							./src/images/ourCooks/cook-two-mob@2x.jpg">
-							<source srcset="./src/images/ourCooks/cook-two-mob.webp,
-							./src/images/ourCooks/cook-two-mob@2x.webp"
+							<source media="(min-width:520px)" srcset="./src/images/ourCooks/cook-two-mob.jpg ,
+							./src/images/ourCooks/cook-two-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/ourCooks/cook-two-mob.webp,
+							./src/images/ourCooks/cook-two-mob@2x.webp 2x"
 							type="image/webp"> 
 					
 							<img src="#" alt="photo cook">
 						</picture> 
 					</li>
 					<li class="cooks__item">
-						<picture width="100px" heigth="100px">
+						<picture>
 				 
-							<source srcset="./src/images/ourCooks/cook-three-desk.jpg ,
-							./src/images/ourCooks/cook-three-desk@2x.jpg">
-							<source srcset="./src/images/ourCooks/cook-three-desk.webp ,
-							./src/images/ourCooks/cook-three-desk@2x.webp"
+							<source media="(min-width:1080px)" srcset="./src/images/ourCooks/cook-three-desk.jpg ,
+							./src/images/ourCooks/cook-three-desk@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/ourCooks/cook-three-desk.webp ,
+							./src/images/ourCooks/cook-three-desk@2x.webp 2x"
 							type="image/webp">
 		
-							<source srcset="./src/images/ourCooks/cook-three-mob.jpg ,
-							./src/images/ourCooks/cook-three-mob@2x.jpg">
-							<source srcset="./src/images/ourCooks/cook-three-mob.webp,
-							./src/images/ourCooks/cook-three-mob@2x.webp"
+							<source media="(min-width:520px)" srcset="./src/images/ourCooks/cook-three-mob.jpg ,
+							./src/images/ourCooks/cook-three-mob@2x.jpg 2x"
+							type="image/jpg">
+							<source media="(min-width:520px)" srcset="./src/images/ourCooks/cook-three-mob.webp,
+							./src/images/ourCooks/cook-three-mob@2x.webp 2x"
 							type="image/webp"> 
 					
 							<img src="#" alt="photo cook">
@@ -712,7 +739,7 @@
 				<ul class="contact__list">
 					<li class="contact__item">
 						<a class="contact__link" href="tel:+234567890">
-							<svg width="15px" heigth="15px">
+							<svg>
 								<use href="./src/images/sprite.svg#icon-phone"></use>
 							</svg>
 							+234567890
@@ -721,19 +748,19 @@
 					<li class="contact__item">
 						<a class="contact__link" href="mailto:bestFood@gmail.com">
 							bestFood@gmail.com
-							<svg width="15px" heigth="15px">
+							<svg>
 								<use href="./src/images/sprite.svg#icon-mail"></use>
 							</svg>
 						</a>
 					</li>
 					<li class="contact__item">
-						<a class="contact__link" href="https://maps.app.goo.gl/QyBEgmS41iu6qihe8">Our address</address></a>
+						<a class="contact__link" href="https://maps.app.goo.gl/QyBEgmS41iu6qihe8">Our address</a>
 					</li>
 				</ul>
 				<form class="comment" name="commen">
 					<label class="comment__lab">
 						Leave your comment:
-						<svg width="15px" heigth="15px">
+						<svg>
 							<use href="./src/images/sprite.svg#icon-comment"></use>
 						</svg>
 					</label>
@@ -753,7 +780,7 @@
 				      </svg>
 				</button>
 				<!-- FORM -->
-				<form class="form" action="" name="order" >
+				<form class="form" action="www.bestFoog.com" name="order" >
 				      <h1 class="form__title no-size">Leave your contacts and we will call you back</h1>
 				      <label class="form__label">
 				            Name
@@ -796,7 +823,8 @@
 				</form>
 			</div>
 		</div>
-            <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+            
+
             <script src="./index.js"></script>
       </body>
 </html>
