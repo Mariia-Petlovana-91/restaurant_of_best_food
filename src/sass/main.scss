@@ -1,8 +1,10 @@
 // BASE
 @import'./base/common';
 // COMPONENTS
-@import './base/container';
+@import './components/container';
+@import './components/_title';
 // LOYOUT
+@import'./layout/hero';
 @import './layout/menu';
 @import './layout/reviews';
 //UTILS
