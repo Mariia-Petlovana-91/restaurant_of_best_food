@@ -1,0 +1,110 @@
+.heroHead{
+	background-image: url(/src/images/hero/hero-mob.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 768px;
+
+	  @media screen and (min-device-pixel-ratio: 2),
+	    (-webkit-min-device-pixel-ratio: 2),
+	    (min-resolution: 192dpi),
+	    (min-resolution: 2dppx)
+	     {
+	    background-image: url(/src/images/hero/hero-mob@2x.jpg);
+	  }
+
+	  @media screen and (min-width: 768px) {
+		background-image: url(/src/images/hero/hero-desk.jpg);
+            max-width: 1440px;
+
+		@media screen and (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx)
+		 {
+	      background-image: url(/src/images/hero/hero-desk@2x.jpg);
+	    }
+	  }
+}
+
+.head{
+	padding: 20px 15px 20px 15px;
+	margin-bottom: 400px;
+
+	@media screen and (min-width: 768px) {
+		display:flex;
+	}
+}
+
+.mob__el{
+	@include flex(flex,center,space-between);
+
+}
+
+.logo{
+	width: 45px;
+	height: 30px;
+
+	@media screen and (min-width: 768px) {
+		width: 100px;
+		height: 68px
+	}
+}
+
+.open{
+	width: 30px;
+	height: 18px;
+	fill: var(--btnColor);
+
+	&:hover, &:focus{
+		fill: var(--accent);
+	}
+}
+
+.mob-nav, .mob-nav__btn{
+  @media screen and (min-width: 768px) {
+	display: none;
+  }
+}
+
+.desktop-nav{
+	margin-left: auto;
+      display: flex;
+	@media screen and (max-width: 768px) {
+		display:none;
+	}
+}
+
+.desktop-nav__list{
+	@include flex (flex, center, space-between);
+}
+
+.desktop-nav__item{
+
+}
+
+.desktop-nav__link{
+	color: var(--white);
+	width: 100%;
+}
+
+.contact{
+	@include flex (flex, center, space-between);
+}
+
+.contact__svg{
+	width: 23px;
+	height: 23px;
+	fill: var(--white);
+}
+
+.contact__link{
+	color: var(--white);
+}
+
+.contact__text{
+	color: var(--white);
+}
+
+
+

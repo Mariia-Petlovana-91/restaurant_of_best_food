@@ -1,13 +1,21 @@
 // BASE
 @import'./base/common';
-// COMPONENTS
-@import './components/container';
-@import './components/_title';
-// LOYOUT
-@import'./layout/hero';
-@import './layout/menu';
-@import './layout/reviews';
+
 //UTILS
 @import './utils/mixin';
 @import './utils/variables';
 @import './utils/visually-hidden';
+
+
+
+// COMPONENTS
+@import './components/container';
+@import './components/_title';
+@import './components/btn';
+
+
+// LOYOUT
+@import './layout/header';
+@import './layout/hero';
+@import './layout/menu';
+@import './layout/reviews';

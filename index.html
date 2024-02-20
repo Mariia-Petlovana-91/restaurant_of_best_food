@@ -18,81 +18,84 @@
       <body>
            			      
             <!-- HEADER AND HERO CONTAINER -->
-		<div class="container">
+            <section class="heroHead">
+			<div class="container">
 
-			<!-- HEADER SECTION -->
-			<header class="mob__head">
-				<svg>
-				      <use href="./src/images/sprite.svg#icon-logo-desk"></use>
-				</svg>
-				<button class="mob-nav__btn" type="button" data-mob-open>
-					<svg>
-						<use href="./src/images/sprite.svg#icon-menu-mob"></use>
-					</svg>
-				</button>
-                    <!-- MOBILE VERSION NAVIGATION -->
-                    <div class="mob__container is-hidden">
-				<nav class="mob-nav">
-					<button class="mob-nav__btn" type="button"  data-mob-close>
-						<svg>
-							<use href="./src/images/sprite.svg#icon-close-menu"></use>
+				<!-- HEADER SECTION -->
+				<header class="head">
+                              <div class="mob__el">
+						<svg class="logo">
+							<use href="./src/images/sprite.svg#icon-logo-desk"></use>
 						</svg>
-					</button>
-					<ul class="mob-nav__list">
-						<li class="mob-nav__item">
-							<a class="mob-nav__link" href="#hero">Main</a>
-						</li>
-						<li class="mob-nav__item">
-							<a class="mob-nav__link" href="#menu">Menu</a>
-						</li>
-						<li class="mob-nav__item">
-							<a class="mob-nav__link" href="#history">About</a>
-						</li>
-						<li class="mob-nav__item">
-							<a class="mob-nav__link" href="#">Rererve</a>
-						</li>
-					</ul>
-				</nav>
-				<button class="order__btn" type="button">ORDER A TABLE</button>
-			  </div>
+						<button class="mob-nav__btn" type="button" data-mob-open>
+							<svg class="open">
+								<use href="./src/images/sprite.svg#icon-menu-mob"></use>
+							</svg>
+						</button>
+					</div>
+				  <!-- MOBILE VERSION NAVIGATION -->
+					<nav class="mob-nav is-hidden">
+						<button class="mob-nav__btn" type="button"  data-mob-close>
+							<svg class="open">
+								<use href="./src/images/sprite.svg#icon-close-menu"></use>
+							</svg>
+						</button>
+						<ul class="mob-nav__list">
+							<li class="mob-nav__item">
+								<a class="mob-nav__link" href="#hero">Main</a>
+							</li>
+							<li class="mob-nav__item">
+								<a class="mob-nav__link" href="#menu">Menu</a>
+							</li>
+							<li class="mob-nav__item">
+								<a class="mob-nav__link" href="#history">About</a>
+							</li>
+							<li class="mob-nav__item">
+								<a class="mob-nav__link" href="#">Rererve</a>
+							</li>
+						</ul>
+						<button class="btn" type="button">ORDER A TABLE</button>
+					</nav>
+					
+	
+				  <!-- DESCTOP VERSION NAVIGATION -->
+					<nav class="desktop-nav">
+						<ul class="desktop-nav__list">
+							<li class="desktop-nav__item">
+								<a class="desktop-nav__link" href="#hero">Main</a>
+							</li>
+							<li class="desktop-nav__item">
+								<a class="desktop-nav__link" href="#menu">Menu</a>
+							</li>
+							<li class="desktop-nav__item">
+								<a class="desktop-nav__link" href="#history">About</a>
+							</li>
+							<li class="desktop-nav__item gg">
+								<a class="desktop-nav__link" href="#">Rererve</a>
+							</li>
+						</ul>
+						<div class="contact">
+							<svg class="contact__svg">
+								<use href="./src/images/sprite.svg#icon-phone"></use>
+							</svg>
+							<a class="contact__link" href="tel:+234567890">+234567890</a>
+							<p class="contact__text">Contact us to reserve a table</p>
+						</div>
+						<button class="btn" type="button">ORDER A TABLE</button>
+					</nav>
+				</header>
+			
+				<!-- HERO SECTION -->
+				<section id="hero" class="hero">
+				  <p class="hero__text">Welcome to <br>
+				  <span class="hero__text--el">Our restaurant </span>
 
-			  <!-- DESCTOP VERSION NAVIGATION -->
-			  <div class="desk__container is-hidden">
-				<nav class="desktop__nav">
-					<ul class="desktop-nav__list">
-						<li class="desktop-nav__item">
-							<a class="desktop-nav__link" href="#hero">Main</a>
-						</li>
-						<li class="desktop-nav__item">
-							<a class="desktop-nav__link" href="#menu">Menu</a>
-						</li>
-						<li class="desktop-nav__item">
-							<a class="desktop-nav__link" href="#history">About</a>
-						</li>
-						<li class="desktop-nav__item gg">
-							<a class="desktop-nav__link" href="#">Rererve</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="contact">
-					<svg>
-						<use href="./src/images/sprite.svg#icon-phone"></use>
-					</svg>
-					<a class="contact__link" href="tel:+234567890">+234567890</a>
-					<p class="contact__text">Contact us to reserve a table</p>
-				</div>
-				<button class="order__btn" type="button">ORDER A TABLE</button>
-			  </div>
-			</header>
-		
-			<!-- HERO SECTION -->
-			<section id="hero" class="hero">
-			  <p class="hero__text">Welcome to </p>
-			  <p class="hero__text--el">Our restaurant</p>
-			  <h1 class="hero__title">HOME OF BETTER FOOD</h1>
-			  <button class="hero__btn" type="button">MENU</button>
-			</section> 
-		</div>
+				  </p>
+				  <h1 class="hero__title">HOME OF BETTER FOOD</h1>
+				  <a class="btn btn--menu" href="#menu">MENU</a>
+				</section> 
+			</div>
+		</section>
                   
 		<!-- PRINCIPLE SECTION -->
 		<section class="principle">
@@ -251,7 +254,7 @@
 		<section class="order">
 				<h3 class="order__title">Celebrate in one of the best restaurants</h3>
 				<p class="oreder__text">This month only, business lunch is $40</p>
-				<button class="order__btn" type="button">ORDER A TABLE</button>
+				<button class="btn" type="button">ORDER A TABLE</button>
 		</section>
 
 		<!-- OUR DISHES SECTION-->
@@ -380,7 +383,7 @@
 						<p class="menu__price">$22</p>
 						<h3 class="menu__title--el">Hamburger mix</h3>
 						<p class="menu__decript">The thickest layer of meat</p>
-						<button class="menu__btn" type="button">ORDER</button>
+						<button class="btn btn--menuSec" type="button">ORDER</button>
 					</li>
 				      <li class="menu__item menu__item--desk">
 						<picture>
@@ -403,7 +406,7 @@
 						<p class="menu__price">$22</p>
 						<h3 class="menu__title--el">Hamburger mix</h3>
 						<p class="menu__decript">The thickest layer of meat</p>
-						<button class="menu__btn" type="button">ORDER</button>
+						<button class="btn btn--menuSec" type="button">ORDER</button>
 					</li>
 				      <li class="menu__item menu__item--desk">
 						<picture>
@@ -427,7 +430,7 @@
 						<p class="menu__price">$22</p>
 						<h3 class="menu__title--el">Hamburger mix</h3>
 						<p class="menu__decript">The thickest layer of meat</p>
-						<button class="menu__btn" type="button">ORDER</button>
+						<button class="btn btn--menuSec" type="button">ORDER</button>
 					</li>
 				</ul>
 			</div>
@@ -758,17 +761,17 @@
 						</svg>
 					</label>
 					<textarea class="comment__text" name="user-comment" placeholder="Enter text"></textarea>
-				      <button class="commen__btn" type="submit">Send</button>
+				      <button class="btn" type="submit">Send</button>
 				</form>
-                        <button class="order__btn" type="button">ORDER A TABLE</button>
+                        <button class="btn" type="button">ORDER A TABLE</button>
 			</div>
 		</footer>
 
 		<!-- FORM ON ORDER -->
-		<div class="backdrop" data-modal >
+		<div class="backdrop container" data-modal >
 			<div class="modal ">
-				<button class="modal__btn-close" type="button" data-modal-close >
-				      <svg width="18px" height="18px" >
+				<button class="" type="button" data-modal-close >
+				      <svg class="open">
 				            <use href="./src/images/sprite.svg#icon-close-menu" ></use>
 				      </svg>
 				</button>
@@ -812,7 +815,7 @@
 				            I agree with the mailing and accept it
 				            <a class="checekebox__link link" href="#">conditions of the contract</a>
 				      </label>
-				      <button class="form__btn" type="submit">Send</button>
+				      <button class="btn" type="submit">SEND</button>
 				</form>
 			</div>
 		</div>
