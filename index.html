@@ -27,19 +27,21 @@
 						<svg class="logo">
 							<use href="./src/images/sprite.svg#icon-logo-desk"></use>
 						</svg>
-						<button class="mob-nav__btn" type="button" data-mob-open>
-							<svg class="open">
+						<button class="mob__btn" type="button" data-mob-open>
+							<svg class="svg">
 								<use href="./src/images/sprite.svg#icon-menu-mob"></use>
 							</svg>
 						</button>
 					</div>
-				  <!-- MOBILE VERSION NAVIGATION -->
-					<nav class="mob-nav is-hidden">
-						<button class="mob-nav__btn" type="button"  data-mob-close>
-							<svg class="open">
-								<use href="./src/images/sprite.svg#icon-close-menu"></use>
-							</svg>
-						</button>
+
+				 <!-- MOBILE VERSION NAVIGATION -->
+				 <div class="mob__menu is-hidden">
+					<button class="mob__btn mob__btn--close" type="button"  data-mob-close>
+						<svg class="svg">
+							<use href="./src/images/sprite.svg#icon-close-menu"></use>
+						</svg>
+					</button>
+					<nav class="mob-nav">
 						<ul class="mob-nav__list">
 							<li class="mob-nav__item">
 								<a class="mob-nav__link" href="#hero">Main</a>
@@ -54,11 +56,17 @@
 								<a class="mob-nav__link" href="#">Rererve</a>
 							</li>
 						</ul>
-						<button class="btn" type="button">ORDER A TABLE</button>
 					</nav>
+					<div class="contact">
+						<a class="contact__link" href="tel:+234567890">+234567890</a>
+						<p class="contact__text">Contact us to reserve a table</p>
+					</div>
+					<button class="btn" type="button">ORDER A TABLE</button>
+				 </div>
 					
 	
 				  <!-- DESCTOP VERSION NAVIGATION -->
+                         <div class="desktop__menu">
 					<nav class="desktop-nav">
 						<ul class="desktop-nav__list">
 							<li class="desktop-nav__item">
@@ -74,15 +82,16 @@
 								<a class="desktop-nav__link" href="#">Rererve</a>
 							</li>
 						</ul>
-						<div class="contact">
-							<svg class="contact__svg">
-								<use href="./src/images/sprite.svg#icon-phone"></use>
-							</svg>
-							<a class="contact__link" href="tel:+234567890">+234567890</a>
-							<p class="contact__text">Contact us to reserve a table</p>
-						</div>
-						<button class="btn" type="button">ORDER A TABLE</button>
 					</nav>
+					<div class="contact">
+						<svg class="contact__svg">
+							<use href="./src/images/sprite.svg#icon-phone"></use>
+						</svg>
+						<a class="contact__link" href="tel:+234567890">+234567890</a>
+						<p class="contact__text">Contact us to reserve a table</p>
+					</div>
+					<button class="btn" type="button">ORDER A TABLE</button>
+				 </div>
 				</header>
 			
 				<!-- HERO SECTION -->
@@ -771,7 +780,7 @@
 		<div class="backdrop container" data-modal >
 			<div class="modal ">
 				<button class="" type="button" data-modal-close >
-				      <svg class="open">
+				      <svg class="svg">
 				            <use href="./src/images/sprite.svg#icon-close-menu" ></use>
 				      </svg>
 				</button>
@@ -782,7 +791,7 @@
 				            Name
 				             <span class="form__box">
 				                  <input class="input form__input" autofocus type="text" name="user-name" pattern="[A-Za-zА-Яа-я ]{100}+" title="Petro Petrenko">
-				                  <svg width="18px" height="18px">
+				                  <svg class="svg">
 				                      <use href="./src/images/sprite.svg#icon-name"></use>
 				                  </svg>
 				             </span>
@@ -791,7 +800,7 @@
 				            Телефон
 				             <span class="form__box"> 
 				                   <input class="input form__input" type="tel" name="user-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-099-00-99">
-				                   <svg width="18px" height="18px">
+				                   <svg class="svg">
 				                        <use href="./src/images/sprite.svg#icon-phone"></use>
 				                  </svg>
 				             </span>
@@ -800,7 +809,7 @@
 				            Email
 				            <span class="form__box">
 				                  <input class="input form__input" type="email" name="user-address-email" pattern="/^[]+@]+\.[]$/i" title="petrenko12p@gmail.com">
-				                        <svg width="18px" height="18px">
+				                        <svg class="svg">
 				                            <use href="./src/images/sprite.svg#icon-mail"></use>
 				                        </svg>
 				            </span>
@@ -819,6 +828,8 @@
 				</form>
 			</div>
 		</div>
+
+
             
             <script src="./index.js"></script>
       </body>

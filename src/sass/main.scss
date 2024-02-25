@@ -10,12 +10,13 @@
 
 // COMPONENTS
 @import './components/container';
-@import './components/_title';
+@import './components/title';
 @import './components/btn';
 
 
 // LOYOUT
 @import './layout/header';
+@import './layout/nav';
 @import './layout/hero';
 @import './layout/menu';
 @import './layout/reviews';
