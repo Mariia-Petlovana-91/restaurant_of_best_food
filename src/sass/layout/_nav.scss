@@ -34,19 +34,42 @@
 	@media screen and (max-width: 768px) {
 		display: none;
 	}
+
+	// DESCTOP
+	display:flex;
+	align-items: center;
     }
 
     .desktop-nav{
 
 	// DESKTOP
 	    display: flex;
+	    flex-direction: row;
+	    margin-right: 40px;
+	    &::after{
+		content: '';
+		width: 1px;
+		height: 40px;
+		background-color: var(--white);
+		position: relative;
+		left: 20px;
+		display: block;
+	}
+          
 
     }
     
     .desktop-nav__list{
+	   
 	    @include flex (flex, center, space-between);
     }
     
+    .desktop-nav__item{
+	&:not(:last-child){
+		margin-right: 15px;
+	}
+
+    }
     
     .desktop-nav__link{
 	    color: var(--white);
@@ -61,8 +84,11 @@
 	// DESKTOP
 	@media screen and (min-width: 768px) {
 		margin-bottom: 0px;
+		margin-right: 40px;
 		flex-direction: column;
+
 	}
+        
 	 
     }
     
@@ -70,22 +96,29 @@
 	    width: 23px;
 	    height: 23px;
 	    fill: var(--white);
+	    display: inline;
     }
     
     .contact__link{
 	    color: var(--white);
-          
+
+	    &:hover, &:focus{
+		color: var(--accent);
+	    }
+
 	// MOBILE
 	    @media screen and (max-width:768px) {
 		 margin-right: 10px;
 	    }
-	   
-	    &:hover, &:focus{
-		color: var(--accent);
-	    }
+    }
+    
+    .contact__link:hover .contact__svg,
+    .contact__link:focus .contact__svg{
+	fill: var(--accent);
     }
 
     .contact__text{
 	    color: var(--white);
+	    
     }
     
