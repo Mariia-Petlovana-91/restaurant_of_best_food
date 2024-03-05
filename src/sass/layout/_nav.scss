@@ -31,7 +31,7 @@
 
     .desktop__menu{
 	// MOBILE
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		display: none;
 	}
 
@@ -45,23 +45,22 @@
 	// DESKTOP
 	    display: flex;
 	    flex-direction: row;
-	    margin-right: 40px;
-	    &::after{
+	    margin-right: 40px;    
+    }
+    
+    .desktop-nav__list{
+	    position: relative;
+	    @include flex (flex, center, space-between);
+
+	    &::after {
 		content: '';
 		width: 1px;
 		height: 40px;
 		background-color: var(--white);
-		position: relative;
-		left: 20px;
+		position: absolute;
+	      left: 231px;
 		display: block;
 	}
-          
-
-    }
-    
-    .desktop-nav__list{
-	   
-	    @include flex (flex, center, space-between);
     }
     
     .desktop-nav__item{
