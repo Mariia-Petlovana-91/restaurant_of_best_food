@@ -2,7 +2,7 @@
       background-color:var(--sectionBg);
 	padding: 20px 30px 20px 30px;
 
-	@include flex (flex, center, center);
+	@extend %flex ;
 	flex-direction: column;
    }
 

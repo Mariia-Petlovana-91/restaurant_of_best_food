@@ -50,10 +50,9 @@
 }
 
 .history__list{
+	@extend %flex;
 	@media screen and (min-width:768px) {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		
 	}
 
 }
@@ -69,9 +68,7 @@
 }
 
 .history__descrip{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@extend %flex;
 	@include font (20px, 400, var(--black));
 }
 
@@ -81,9 +78,7 @@
 
 .history__imgList {
 	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@extend %flex;
 	position: relative;
 
 }

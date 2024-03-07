@@ -5,7 +5,7 @@
 
 .dishes__posititon{
 	@media screen and (min-width:768px) {
-		@include flex (flex, center,center);
+          @include flex (flex, center, center);
 	}
 	
 }
@@ -33,14 +33,18 @@
 }
 
 .dishes__link{
-	@include flex (flex, center, center);
-
+	@extend %flex;
 
 }
+
 
 .dishes__text{
 	margin-left: 15px;
 	@include font (22px, 400, var(--black));
+
+	&:hover, &:focus{
+		color: var(--accent);
+	}
 
 	@media screen and (min-width:768px) {
 		font-size: 26px;
@@ -63,4 +67,9 @@
 		display: none;
 		
 	}
+}
+
+.dishes__text:hover .dishes__decor,
+.dishes__text:focus .dishes__decor{
+	color: var(--accent);
 }

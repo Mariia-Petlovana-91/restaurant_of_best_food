@@ -48,7 +48,7 @@
 }
 
 .mob__el{
-	@include flex(flex,center,space-between);
+	@extend %flex;
       margin-right: auto;
 }
 
