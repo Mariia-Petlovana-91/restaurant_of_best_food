@@ -438,8 +438,18 @@ img {
 }
 
 .history {
-  margin-bottom: 60px;
   padding: 0px 60px 0px 60px;
+  margin-bottom: 290px;
+}
+@media screen and (min-width: 768px) {
+  .history {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .history {
+    margin-bottom: 190px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -448,9 +458,6 @@ img {
   }
 }
 
-.history__el--first {
-  margin-bottom: 190px;
-}
 @media screen and (min-width: 768px) {
   .history__el--first {
     margin-right: 40px;
@@ -513,19 +520,89 @@ img {
 
 .history__imgItem1 {
   position: absolute;
-  top: 10%;
-  right: 35%;
+  top: 20px;
+  right: 55%;
+}
+@media screen and (min-width: 1080px) {
+  .history__imgItem1 {
+    top: 20%;
+  }
 }
 
 .history__imgItem2 {
   position: absolute;
   max-width: 100%;
+  z-index: -1;
+  top: 0;
 }
 
 .history__imgItem3 {
   position: absolute;
-  top: 15%;
-  left: 40%;
+  top: 100px;
+  left: 55%;
+}
+@media screen and (min-width: 1080px) {
+  .history__imgItem3 {
+    top: 55%;
+  }
+}
+
+.order {
+  margin-bottom: 60px;
+  padding: 100px 20px 100px 20px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order/bg-order-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 768px;
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order/bg-order-mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .order {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order/bg-order-desk.jpg);
+    max-width: 1440px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order/bg-order-desk@2x.jpg);
+  }
+}
+
+.order__title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--accent);
+}
+@media screen and (min-width: 768px) {
+  .order__title {
+    font-size: 52px;
+  }
+}
+
+.order__text {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--white);
+}
+@media screen and (min-width: 768px) {
+  .order__text {
+    margin-bottom: 0px;
+  }
+}
+
+.order__btn {
+  margin: auto;
 }
 
 .menu__item--desk {

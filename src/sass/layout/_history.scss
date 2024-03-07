@@ -1,6 +1,19 @@
 .history{
-	margin-bottom: 60px;
+	// MOBILE
 	padding: 0px 60px 0px 60px;
+	margin-bottom: 290px;
+
+	// TABLE
+	@media screen and (min-width:768px) {
+		margin-bottom: 60px;
+	}
+	
+	
+
+	// DESKTOP
+	@media screen and (min-width:1080px) {
+		margin-bottom: 190px;
+	}
 }
 
 .history__el{
@@ -10,7 +23,8 @@
 }
 
 .history__el--first{
-	margin-bottom: 190px;
+	
+	// DESCTOP
 	@media screen and (min-width:768px) {
 		margin-right: 40px;
 		max-width: 444px;
@@ -72,20 +86,31 @@
 }
 
 .history__imgItem1{
- position: absolute;
- top: 10%;
- right: 35%;
+position: absolute;
+top: 20px;
+right: 55%;
+
+// DESCTOP
+@media screen and (min-width:1080px) {
+top: 20%;	
+}
 }
 
 .history__imgItem2{
 position: absolute;
 max-width: 100%;
-
+z-index: -1;
+top: 0;
 }
 
 .history__imgItem3{
 position: absolute;
-top: 15%;
-left: 40%;
+top: 100px;
+left: 55%;
+
+// DESCTOP
+@media screen and (min-width:1080px) {
+	top: 55%;	
+	}
 }
 
