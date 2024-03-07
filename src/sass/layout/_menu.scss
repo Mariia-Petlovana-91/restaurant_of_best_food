@@ -45,6 +45,7 @@
 .menu__item{
 	position: relative;
 	background-color: var(--white);
+	padding: 50px 20px 20px 20px;
 	
 	//DESCTOP
 
@@ -60,6 +61,8 @@
 	background-color: var(--accent);
 	@include font (14px, 400, var(--black));
 	padding: 6px 10px 6px 10px;
+	top: 0;
+	left: 0;
 }
 
 
@@ -106,3 +109,4 @@
 		box-shadow: none;
 	}
 }
+
