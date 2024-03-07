@@ -9,11 +9,3 @@
 
 }
 
-.btn--menuSec{
-	background-color: var(--accent);
-      box-shadow: 4px 3px 3px rgba(187, 186, 186, 0.5);
-	&:hover, &:focus{
-		background-color: var(--btnColor);
-		box-shadow: none;
-	}
-}
