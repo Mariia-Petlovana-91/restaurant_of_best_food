@@ -51,8 +51,9 @@
 
 .history__list{
 	@extend %flex;
+	flex-direction: column;
 	@media screen and (min-width:768px) {
-		
+		flex-direction: row;
 	}
 
 }
@@ -69,10 +70,12 @@
 
 .history__descrip{
 	@extend %flex;
+	flex-direction: column;
 	@include font (20px, 400, var(--black));
 }
 
 .history__number{
+	margin-bottom: 20px;
 	@include font (40px, 400, var(--lightTitlePrincipleSec));
 }
 

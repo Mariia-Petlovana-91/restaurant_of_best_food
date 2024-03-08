@@ -470,6 +470,15 @@ img {
   margin-bottom: 30px;
 }
 
+.history__list {
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .history__list {
+    flex-direction: row;
+  }
+}
+
 .history__item {
   margin-bottom: 25px;
 }
@@ -480,12 +489,14 @@ img {
 }
 
 .history__descrip {
+  flex-direction: column;
   font-size: 20px;
   font-weight: 400;
   color: var(--black);
 }
 
 .history__number {
+  margin-bottom: 20px;
   font-size: 40px;
   font-weight: 400;
   color: var(--lightTitlePrincipleSec);
@@ -660,6 +671,7 @@ img {
 }
 
 .menu {
+  margin-bottom: 60px;
   padding: 40px 40px 120px 40px;
   background-image: url(../images/menu/bg-mob.jpg);
   background-repeat: no-repeat;
@@ -674,7 +686,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .menu {
-    margin-bottom: 250px;
     background-image: url(../images/menu/bg-desk.jpg);
     max-width: 1440px;
   }
@@ -699,7 +710,7 @@ img {
 .menu__item {
   position: relative;
   background-color: var(--white);
-  padding: 50px 20px 20px 20px;
+  padding: 50px 30px 20px 30px;
 }
 @media screen and (min-width: 768px) {
   .menu__item:not(:last-child) {
@@ -724,16 +735,31 @@ img {
   }
 }
 
+.menu__img {
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
 .menu__price {
   font-family: cursive;
   font-size: 30px;
   font-weight: 400;
   color: var(--white);
   background-color: var(--accent);
-  width: 100px;
-  height: 100px;
-  border: 3px solid var(--white);
+  width: 80px;
+  height: 80px;
+  border: 5px solid var(--white);
   border-radius: 50%;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
+@media screen and (min-width: 345px) {
+  .menu__price {
+    right: 8%;
+    top: 40%;
+  }
 }
 
 .menu__title--third {

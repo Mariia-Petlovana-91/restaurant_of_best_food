@@ -1,5 +1,5 @@
 .menu{
-
+      margin-bottom: 60px;
 	padding: 40px 40px 120px 40px;
 
 	background-image: url(../images/menu/bg-mob.jpg);
@@ -17,7 +17,6 @@
 	  }
 
 	  @media screen and (min-width: 768px) {
-		margin-bottom: 250px;
 		background-image: url(../images/menu/bg-desk.jpg);
             max-width: 1440px;
 
@@ -45,7 +44,7 @@
 .menu__item{
 	position: relative;
 	background-color: var(--white);
-	padding: 50px 20px 20px 20px;
+	padding: 50px 30px 20px 30px;
 	
 	//DESCTOP
 
@@ -72,17 +71,30 @@
 	}
 }
 
+.menu__img{
+	display: block;
+	border-radius: 50%;
+	margin-bottom: 20px;
+
+}
 
 .menu__price{
 	font-family: cursive;
 	@include font (30px, 400, var(--white));
 	background-color: var(--accent);
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	@extend %flex;
-	border: 3px solid var(--white);
+	border: 5px solid var(--white);
 	border-radius: 50%;
+      position: absolute;
+	right: 10%;
+	top: 30%;
 
+	@media screen and (min-width:345px) {
+		right: 8%;
+		top: 40%;
+	}
 }
 
 .menu__title--third{
