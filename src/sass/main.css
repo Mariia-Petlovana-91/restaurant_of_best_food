@@ -39,7 +39,7 @@ img {
   height: auto;
 }
 
-.menu__price, .dishes__link, .history__imgList, .history__descrip, .history__list, .mob__menu, .mob__el {
+.menu__price, .dishes__link, .history__imgList, .history__descrip, .history__list, .mob__el, .mob__menu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,6 +106,28 @@ img {
   background-color: var(--accent);
 }
 
+.logo {
+  width: 45px;
+  height: 30px;
+  display: block;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 100px;
+    height: 68px;
+  }
+}
+
+.svg {
+  width: 30px;
+  height: 18px;
+  fill: var(--btnColor);
+}
+.svg:hover, .svg:focus {
+  fill: var(--accent);
+}
+
 .heroHead {
   margin-bottom: 1150px;
   background-image: url(../images/hero/hero-mob.jpg);
@@ -152,32 +174,6 @@ img {
   }
 }
 
-.mob__el {
-  margin-right: auto;
-}
-
-.logo {
-  width: 45px;
-  height: 30px;
-  display: block;
-  margin-right: auto;
-}
-@media screen and (min-width: 768px) {
-  .logo {
-    width: 100px;
-    height: 68px;
-  }
-}
-
-.svg {
-  width: 30px;
-  height: 18px;
-  fill: var(--btnColor);
-}
-.svg:hover, .svg:focus {
-  fill: var(--accent);
-}
-
 .mob__menu {
   background-color: var(--sectionBg);
   padding: 20px 30px 20px 30px;
@@ -188,6 +184,10 @@ img {
   .mob__menu, .mob__btn {
     display: none;
   }
+}
+
+.mob__el {
+  margin-right: auto;
 }
 
 .mob__btn--close {
@@ -839,4 +839,82 @@ img {
 /* Затемнення повзунка при наведенні миші */
 .reviews__list::-webkit-scrollbar-thumb:hover {
   background-color: #555;
+}
+
+.footer {
+  margin-bottom: 60px;
+  padding: 50px 40px 50px 40px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/footer/bg-footer-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 768px;
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .footer {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/footer/bg-footer-mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/footer/bg-footer-desk.jpg);
+    max-width: 1440px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .footer {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/footer/bg-footer-desk@2x.jpg);
+  }
+}
+
+.footer__list {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .footer__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__item {
+  text-align: center;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__link {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--white);
+}
+.footer__link:hover, .footer__link:focus {
+  color: var(--accent);
+}
+
+.footer__svg {
+  fill: var(--white);
+}
+
+.footer__link:hover .footer__svg,
+.footer__link:focus .footer__svg {
+  fill: var(--accent);
+}
+
+.footer__btn {
+  margin: 0px auto 20px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=main.css.map */

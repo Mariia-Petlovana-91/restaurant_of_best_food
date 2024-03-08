@@ -5,11 +5,16 @@
 	@extend %flex ;
 	flex-direction: column;
    }
-
+   
    .mob__menu, .mob__btn{
 	@media screen and (min-width: 768px) {
 	    display: none;
 	}
+    }
+
+    .mob__el{
+	@extend %flex;
+      margin-right: auto;
     }
 
     .mob__btn--close{

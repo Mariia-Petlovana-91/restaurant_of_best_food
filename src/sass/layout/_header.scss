@@ -47,32 +47,8 @@
 	}
 }
 
-.mob__el{
-	@extend %flex;
-      margin-right: auto;
-}
 
-.logo{
-	width: 45px;
-	height: 30px;
-	display: block;
-	margin-right: auto;
 
-	@media screen and (min-width: 768px) {
-		width: 100px;
-		height: 68px
-	}
-}
-
-.svg{
-	width: 30px;
-	height: 18px;
-	fill: var(--btnColor);
-
-	&:hover, &:focus{
-		fill: var(--accent);
-	}
-}
 
 
 

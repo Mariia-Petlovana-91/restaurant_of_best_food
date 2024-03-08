@@ -709,40 +709,53 @@
 		<!-- FOOTER -->
 		<footer class="footer">
 			<div class="container">
-				<ul class="contact__list">
-					<li class="contact__item">
-						<a class="contact__link" href="tel:+234567890">
-							<svg class="svg">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a class="footer__link" href="tel:+234567890">
+							<svg class="svg footer__svg">
 								<use href="./src/images/sprite.svg#icon-phone"></use>
 							</svg>
 							+234567890
 						</a>
 					</li>
-					<li class="contact__item">
-						<a class="contact__link" href="mailto:bestFood@gmail.com">
-							bestFood@gmail.com
-							<svg class="svg">
+					<li class="footer__item">
+						<a class="footer__link" href="mailto:bestFood@gmail.com">
+							<svg class="svg footer__svg">
 								<use href="./src/images/sprite.svg#icon-mail"></use>
 							</svg>
+							bestFood@gmail.com
 						</a>
 					</li>
-					<li class="contact__item">
-						<a class="contact__link" href="https://maps.app.goo.gl/QyBEgmS41iu6qihe8">Our address</a>
+					<li class="footer__item">
+						<a class="footer__link" href="https://maps.app.goo.gl/QyBEgmS41iu6qihe8">
+							<svg class="svg footer__svg">
+								<use href="./src/images/sprite.svg#icon-location"></use>
+							</svg>
+							Our address
+						</a>
 					</li>
 				</ul>
-				<form class="comment" name="commen">
-					<label class="comment__lab">
-						Leave your comment:
-						<svg class="svg">
-							<use href="./src/images/sprite.svg#icon-comment"></use>
-						</svg>
-					</label>
-					<textarea class="comment__text" name="user-comment" placeholder="Enter text"></textarea>
-				      <button class="btn" type="submit">Send</button>
-				</form>
-                        <button class="btn" type="button">ORDER A TABLE</button>
+				<div class="footer__buttons">
+					<button class="btn footer__btn" type="button">LEAVE A COMMENT</button>
+					<button class="btn footer__btn" type="button">ORDER A TABLE</button>
+				</div>
+
 			</div>
 		</footer>
+
+		<!-- FORM ON COMMENT -->
+            <div class="backdrop container">
+			<form class="comment" name="commen">
+				<label class="comment__lab">
+					<svg class="svg">
+						<use href="./src/images/sprite.svg#icon-comment"></use>
+					</svg>
+					Leave your comment:
+				</label>
+				<textarea class="comment__text" name="user-comment" placeholder="Enter text"></textarea>
+				<button class="btn" type="submit">SEND</button>
+			</form>
+		</div>
 
 		<!-- FORM ON ORDER -->
 		<div class="backdrop container" data-modal >
