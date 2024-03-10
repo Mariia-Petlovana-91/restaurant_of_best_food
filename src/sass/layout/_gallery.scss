@@ -24,32 +24,3 @@
 		flex-basis: calc (100% / 3 -15px);
 	}
 }
-
-
-// @media screen and(min-width:768px) {
-// 	max-width: 354px;
-// 	@include net-second-part(30px, 30px, calc(100% / 2 -30px));
-//     }
-  
-//     @media screen and(min-width:1200px) {
-// 	max-width: 370px;
-// 	@include net-second-part(30px, 30px, calc(100% / 3 -30px));
-//     }
-//   }
-
-// @media screen and(min-width:768px) {
-// 	@include net-first-part(flex, wrap, -30px, -30px);
-//     }
-//   }
-
-// @mixin net-first-part($f, $fw, $mt, $ml) {
-// 	display: $f;
-// 	flex-wrap: $fw;
-// 	margin-top: $mt;
-// 	margin-left: $ml;
-//     }
-//     @mixin net-second-part($mt, $ml, $fb) {
-// 	margin-top: $mt;
-// 	margin-left: $ml;
-// 	flex-basis: $fb;
-//     }
