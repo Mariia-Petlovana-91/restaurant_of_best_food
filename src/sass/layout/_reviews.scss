@@ -3,7 +3,7 @@ margin-bottom: 60px;
 }
 
 .reviews__list{
-margin: auto;
+margin: 0 auto 30px auto;
 display: flex;
 overflow-x: scroll;
 scroll-snap-type: x mandatory;
@@ -38,6 +38,10 @@ text-align: center;
 .reviews__name{
   @include font (20px, 400, var(--black));
   margin-bottom: 10px;
+}
+
+.reviews__btn{
+  margin: auto;
 }
 
 /* Стилізація повзунка прокрутки */

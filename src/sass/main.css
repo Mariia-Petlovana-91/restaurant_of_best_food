@@ -805,7 +805,7 @@ img {
 }
 
 .reviews__list {
-  margin: auto;
+  margin: 0 auto 30px auto;
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -847,23 +847,8 @@ img {
   margin-bottom: 10px;
 }
 
-/* Стилізація повзунка прокрутки */
-.reviews__list::-webkit-scrollbar {
-  width: 10px; /* Ширина повзунка */
-}
-
-.reviews__list::-webkit-scrollbar-thumb {
-  background-color: #888; /* Колір повзунка */
-  border-radius: 5px; /* Закруглення країв повзунка */
-}
-
-.reviews__list::-webkit-scrollbar-track {
-  background-color: #f0f0f0; /* Колір фону повзунка */
-}
-
-/* Затемнення повзунка при наведенні миші */
-.reviews__list::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
+.reviews__btn {
+  margin: auto;
 }
 
 /* Стилізація повзунка прокрутки */
@@ -885,18 +870,60 @@ img {
   background-color: #555;
 }
 
-.galery {
+/* Стилізація повзунка прокрутки */
+.reviews__list::-webkit-scrollbar {
+  width: 10px; /* Ширина повзунка */
+}
+
+.reviews__list::-webkit-scrollbar-thumb {
+  background-color: #888; /* Колір повзунка */
+  border-radius: 5px; /* Закруглення країв повзунка */
+}
+
+.reviews__list::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Колір фону повзунка */
+}
+
+/* Затемнення повзунка при наведенні миші */
+.reviews__list::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.gallery {
   padding: 30px 20px 30px 20px;
   margin-bottom: 60px;
+}
+
+.gallery__list {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 646px) {
+  .gallery__item {
+    margin-bottom: 15px;
+  }
+  .gallery__item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    margin-bottom: 0px;
+  }
+  .gallery__item:not(:last-child) {
+    margin-right: 15px;
+  }
 }
 
 .cooks {
   margin-bottom: 60px;
   padding: 20px 40px 20px 20px;
-}
-
-.cooks__item {
-  padding: auto;
 }
 
 .footer {
