@@ -899,25 +899,22 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: -15px;
+  margin-left: -15px;
 }
 
-.gallery__item:not(:last-child) {
-  margin-bottom: 15px;
+.gallery__item {
+  margin-top: 15px;
 }
 @media screen and (min-width: 646px) {
   .gallery__item {
-    margin-bottom: 15px;
-  }
-  .gallery__item:not(:last-child) {
-    margin-right: 15px;
+    margin-left: 15px;
+    flex-basis: calc 100%/2 -15px;
   }
 }
 @media screen and (min-width: 768px) {
   .gallery__item {
-    margin-bottom: 0px;
-  }
-  .gallery__item:not(:last-child) {
-    margin-right: 15px;
+    flex-basis: calc 100%/3 -15px;
   }
 }
 
