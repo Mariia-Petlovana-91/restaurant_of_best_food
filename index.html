@@ -694,7 +694,13 @@
 		</footer>
 
 		<!-- FORM ON COMMENT -->
-            <div class="backdrop container">
+            <!-- <div class="backdrop container">
+                 <div class="modal">
+			<button class="" type="button" data-modal-close >
+				<svg class="svg">
+					<use href="./src/images/sprite.svg#icon-close-menu" ></use>
+				</svg>
+			</button>
 			<form class="comment" name="comment">
 
 				<input class="input comment__input" 
@@ -710,55 +716,61 @@
 				<textarea class="comment__text" name="user-comment" placeholder="Enter text"></textarea>
 				<button class="btn" type="submit">SEND</button>
 			</form>
-		</div>
+		     </div>
+		</div> -->
 
 		<!-- FORM ON ORDER -->
 		<div class="backdrop container" data-modal >
 			<div class="modal ">
-				<button class="" type="button" data-modal-close >
+				<button class="madal__btn" type="button" data-modal-close >
 				      <svg class="svg">
 				            <use href="./src/images/sprite.svg#icon-close-menu" ></use>
 				      </svg>
 				</button>
 				<!-- FORM -->
 				<form class="form" action="www.bestFoog.com" name="order" >
-				      <h1 class="form__title no-size">Leave your contacts and we will call you back</h1>
-				      <label class="form__label">
-				            Name
+				      <h1 class="form__title">Leave your contacts and we will call you back</h1>
 				             <span class="form__box">
-				                  <input class="input form__input" autofocus type="text" name="user-name" pattern="[A-Za-zА-Яа-я ]{100}+" title="Petro Petrenko">
-				                  <svg class="svg">
-				                      <use href="./src/images/sprite.svg#icon-name"></use>
-				                  </svg>
+							<svg class="svg form__svg">
+								<use href="./src/images/sprite.svg#icon-name"></use>
+							  </svg>
+				                  <input class="input form__input"
+							autofocus type="text"
+							name="user-name" 
+							pattern="[A-Za-zА-Яа-я ]{100}+" 
+							title="Petro Petrenko">
+
 				             </span>
-				       </label>
-				       <label class="form__label">
-				            Телефон
 				             <span class="form__box"> 
-				                   <input class="input form__input" type="tel" name="user-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-099-00-99">
-				                   <svg class="svg">
+							<svg class="svg form__svg">
 				                        <use href="./src/images/sprite.svg#icon-phone"></use>
 				                  </svg>
+				                   <input class="input form__input"
+							 type="tel" name="phone"
+							 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+							 title="099-099-00-99">
 				             </span>
-				       </label>
-				      <label class="form__label">
-				            Email
 				            <span class="form__box">
-				                  <input class="input form__input" type="email" name="user-address-email" pattern="/^[]+@]+\.[]$/i" title="petrenko12p@gmail.com">
-				                        <svg class="svg">
-				                            <use href="./src/images/sprite.svg#icon-mail"></use>
-				                        </svg>
+							<svg class="svg form__svg">
+								<use href="./src/images/sprite.svg#icon-mail"></use>
+							  </svg>
+				                  <input class="input form__input"
+							type="email" name="email"
+							pattern="/^[]+@]+\.[]$/i"
+							title="petrenko12p@gmail.com">
 				            </span>
 				      </label>
-				      <label class="form__label form__label--comment">
-				            Сomment
-				             <textarea class="form__comment input" name="user-comment" placeholder="Enter text"></textarea>
+				      <label class="form__label">
+				            Сomment: 
+				             <textarea class="form__comment" 
+						 name="comment" 
+						 placeholder="Enter text"></textarea>
 				      </label>
 				            <!-- CHECKBOX -->
 				      <label class="checkebox__label">
 				            <input class="checkebox__input" type="checkbox" >
 				            I agree with the mailing and accept it
-				            <a class="checekebox__link link" href="#">conditions of the contract</a>
+				            <a class="checekebox__link" href="#">conditions of the contract</a>
 				      </label>
 				      <button class="btn" type="submit">SEND</button>
 				</form>
