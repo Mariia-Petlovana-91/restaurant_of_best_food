@@ -46,16 +46,16 @@ text-align: center;
 
 /* Стилізація повзунка прокрутки */
 .reviews__list::-webkit-scrollbar {
-	width: 10px; /* Ширина повзунка */
+	width: 5px; /* Ширина повзунка */
   }
   
   .reviews__list::-webkit-scrollbar-thumb {
-	background-color: #888; /* Колір повзунка */
-	border-radius: 5px; /* Закруглення країв повзунка */
+	background-color: #b82020; /* Колір повзунка */
+	border-radius: 25px; /* Закруглення країв повзунка */
   }
   
   .reviews__list::-webkit-scrollbar-track {
-	background-color: #f0f0f0; /* Колір фону повзунка */
+	background-color: #770f0f; /* Колір фону повзунка */
   }
   
   /* Затемнення повзунка при наведенні миші */
@@ -71,7 +71,7 @@ text-align: center;
 // ```css
 /* Стилізація повзунка прокрутки */
 .reviews__list::-webkit-scrollbar {
-    width: 10px; /* Ширина повзунка */
+    width: 5px; /* Ширина повзунка */
 }
 
 .reviews__list::-webkit-scrollbar-thumb {
