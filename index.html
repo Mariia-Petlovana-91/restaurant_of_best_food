@@ -693,34 +693,41 @@
 			</div>
 		</footer>
 
-		<!-- FORM ON COMMENT -->
-            <!-- <div class="backdrop container">
+		<!-- FORM ON REVIEWS -->
+            <div class="backdrop container">
                  <div class="modal">
-			<button class="" type="button" data-modal-close >
-				<svg class="svg">
-					<use href="./src/images/sprite.svg#icon-close-menu" ></use>
-				</svg>
-			</button>
-			<form class="comment" name="comment">
+			      <button class="madal__btn" type="button" data-modal-close >
+				      <svg class="svg">
+				      	<use href="./src/images/sprite.svg#icon-close-menu" ></use>
+				     </svg>
+			     </button>
+			 <form class="form" name="revievs">
 
-				<input class="input comment__input" 
-				autofocus type="text" name="user-name"
-				 pattern="[A-Za-zА-Яа-я ]{100}+" 
-				 title="Petro Petrenko" placeholder="Input your name">
-				<label class="comment__lab">
-					<svg class="svg">
-						<use href="./src/images/sprite.svg#icon-comment"></use>
-					</svg>
-					Leave your comment:
+				<div class="form__el--rev">
+                        <input class="form__input form__input--rev" 
+				autofocus type="text" name="name"
+				pattern="[A-Za-zА-Яа-я ]{100}+" 
+				title="Petro Petrenko"
+				placeholder="Input your name">
+
+                        <button class="form__btn--rev" type="button">ADD PHOTO</button>
+				</div>
+				<label class="form__label">
+					<span class="form__label--elRev">
+						<svg class="svg">
+							<use href="./src/images/sprite.svg#icon-comment"></use>
+						</svg>
+						Leave your reviews:
+					</span>
+					<textarea class="form__comment" name="comment" placeholder="Enter text"></textarea>
 				</label>
-				<textarea class="comment__text" name="user-comment" placeholder="Enter text"></textarea>
-				<button class="btn" type="submit">SEND</button>
-			</form>
+			 	<button class="btn" type="submit">SEND</button>
+			 </form>
 		     </div>
-		</div> -->
+		</div>
 
 		<!-- FORM ON ORDER -->
-		<div class="backdrop container" data-modal >
+		<div class="backdrop container is-hidden" data-modal >
 			<div class="modal ">
 				<button class="madal__btn" type="button" data-modal-close >
 				      <svg class="svg">
@@ -767,10 +774,10 @@
 						 placeholder="Enter text"></textarea>
 				      </label>
 				            <!-- CHECKBOX -->
-				      <label class="checkebox__label">
-				            <input class="checkebox__input" type="checkbox" >
-				            I agree with the mailing and accept it
-				            <a class="checekebox__link" href="#">conditions of the contract</a>
+				      <label class="form__label--chek">
+				            <input class="form__input--chek" type="checkbox">
+						<span class="form__text">I agree with the mailing and accept it</span>
+				            <a class="form__link" href="#">conditions of the contract</a>
 				      </label>
 				      <button class="btn" type="submit">SEND</button>
 				</form>

@@ -39,7 +39,7 @@ img {
   height: auto;
 }
 
-.menu__price, .dishes__link, .history__imgList, .history__descrip, .history__list, .mob__el, .mob__menu {
+.menu__price, .dishes__link, .history__imgList, .history__descrip, .history__list, .mob__el, .mob__menu, .form__el--rev {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,6 +209,9 @@ img {
   border: 1px solid var(--btnColor);
   border-radius: 25px;
   cursor: pointer;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--textColor);
 }
 .form__input:hover, .form__input:focus {
   border-color: var(--accent);
@@ -236,25 +239,85 @@ img {
   border: 1px solid var(--btnColor);
   border-radius: 10px;
   cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--textColor);
 }
 .form__comment:hover, .form__comment:focus {
   border-color: var(--accent);
 }
 
-.checkebox__label {
+.form__label--chek {
   margin-bottom: 20px;
-  position: relative;
+  display: flex;
 }
 
 input[type=checkbox] {
   accent-color: var(--btnColor);
 }
 
-.checekebox__link {
+.form__input--chek {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.form__text {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.form__text, .form__link {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--textColor);
+}
+
+.form__link {
   color: var(--btnColor);
 }
-.checekebox__link:hover, .checekebox__link:focus {
+.form__link:hover, .form__link:focus {
   color: var(--accent);
+}
+
+.form__el--rev {
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .form__el--rev {
+    flex-direction: row;
+  }
+}
+
+.form__input--rev {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 480px) {
+  .form__input--rev {
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+}
+
+.form__btn--rev {
+  min-width: 190px;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 1px solid var(--btnColor);
+  padding: 5px 10px 5px 10px;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--textColor);
+}
+.form__btn--rev:hover, .form__btn--rev:focus {
+  background-color: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.form__label--elRev {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .heroHead {

@@ -24,6 +24,9 @@
 	border:1px solid var(--btnColor);
 	border-radius: 25px;
 	cursor: pointer;
+
+	@include font (17px, 400, var(--textColor));
+
     &:hover,
     &:focus {
 	border-color: var(--accent);
@@ -52,8 +55,9 @@
 	outline: none;
 	border:1px solid var(--btnColor);
 	border-radius: 10px;
-
 	cursor: pointer;
+
+	@include font (15px, 400, var(--textColor));
 
 	&:hover,
 	&:focus {
@@ -61,17 +65,30 @@
 	}
 }
 
-.checkebox__label{
+.form__label--chek{
 margin-bottom: 20px;
-position: relative;
-
+display: flex;
 }
 
 input[type='checkbox'] {
 	accent-color: var(--btnColor);
 }
 
-.checekebox__link{
+.form__input--chek{
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.form__text{
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.form__text, .form__link{
+	@include font (12px, 400, var(--textColor));
+}
+
+.form__link{
 	color: var(--btnColor);
 
 	&:hover, &:focus{
